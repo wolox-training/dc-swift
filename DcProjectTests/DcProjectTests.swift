@@ -1,6 +1,6 @@
 //
-//  BaseProjectTests.swift
-//  BaseProjectTests
+//  DcProjectTests.swift
+//  DcProjectTests
 //
 //  Created by Guido Marucci Blas on 4/3/16.
 //  Copyright © 2016 Wolox. All rights reserved.
@@ -8,9 +8,9 @@
 
 import Quick
 import Nimble
-import BaseProject
+import DcProject
 
-final class BaseProjectSpec: QuickSpec {
+final class DcProjectSpec: QuickSpec {
     
     override func spec() {
         
