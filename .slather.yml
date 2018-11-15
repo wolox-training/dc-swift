@@ -1,0 +1,8 @@
+xcodeproj: ./DcProject.xcodeproj
+scheme: DcProject
+ignore:
+  - DcProject/AppDelegate.swift
+  - DcProject/Environment.swift
+  - DcProject/Services/RollbarService.swift
+  - DcProjectTests/*
+  - DcProjectUITests/*
