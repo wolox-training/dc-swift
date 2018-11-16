@@ -21,6 +21,10 @@
 		9D1F7A751CBED82900E20BE5 /* Quick.framework in Carthage */ = {isa = PBXBuildFile; fileRef = 9D1F7A701CBED81900E20BE5 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9D6E405A1CB1B93A008CE558 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6E40551CB1B939008CE558 /* ReactiveCocoa.framework */; };
 		9D6E405B1CB1B93A008CE558 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6E40561CB1B93A008CE558 /* Result.framework */; };
+		B722F297219F59500080B80B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B722F293219F59500080B80B /* TabBarController.swift */; };
+		B722F298219F59500080B80B /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B722F294219F59500080B80B /* TabBarView.swift */; };
+		B722F299219F59500080B80B /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B722F295219F59500080B80B /* TabBarViewModel.swift */; };
+		B722F29A219F59500080B80B /* TabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B722F296219F59500080B80B /* TabBarView.xib */; };
 		B7B2F2C7219F076C00082CE3 /* LibraryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7B2F2C6219F076C00082CE3 /* LibraryCell.xib */; };
 		B7B2F2C9219F077800082CE3 /* LibraryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B2F2C8219F077800082CE3 /* LibraryCell.swift */; };
 		B7B2F2CC219F0C3100082CE3 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B2F2CB219F0C3100082CE3 /* Book.swift */; };
@@ -86,6 +90,10 @@
 		9D1F7A701CBED81900E20BE5 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		9D6E40551CB1B939008CE558 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		9D6E40561CB1B93A008CE558 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		B722F293219F59500080B80B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		B722F294219F59500080B80B /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		B722F295219F59500080B80B /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
+		B722F296219F59500080B80B /* TabBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarView.xib; sourceTree = "<group>"; };
 		B7B2F2C6219F076C00082CE3 /* LibraryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryCell.xib; sourceTree = "<group>"; };
 		B7B2F2C8219F077800082CE3 /* LibraryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCell.swift; sourceTree = "<group>"; };
 		B7B2F2CB219F0C3100082CE3 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
@@ -161,6 +169,7 @@
 		9D1575031CB1B27500EA395E /* DcProject */ = {
 			isa = PBXGroup;
 			children = (
+				B722F292219F59380080B80B /* TabBar */,
 				B7B2F2CA219F0C1600082CE3 /* Models */,
 				B7DD31F0219DFE620080D1B7 /* Library */,
 				E1530D9A1ED378F9002A9002 /* Services */,
@@ -208,6 +217,17 @@
 				9D6E40561CB1B93A008CE558 /* Result.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B722F292219F59380080B80B /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				B722F293219F59500080B80B /* TabBarController.swift */,
+				B722F294219F59500080B80B /* TabBarView.swift */,
+				B722F295219F59500080B80B /* TabBarViewModel.swift */,
+				B722F296219F59500080B80B /* TabBarView.xib */,
+			);
+			name = TabBar;
 			sourceTree = "<group>";
 		};
 		B7B2F2C5219F074200082CE3 /* LibraryCell */ = {
@@ -360,6 +380,7 @@
 			files = (
 				B7DD31F8219DFF900080D1B7 /* LibraryView.xib in Resources */,
 				B7B2F2C7219F076C00082CE3 /* LibraryCell.xib in Resources */,
+				B722F29A219F59500080B80B /* TabBarView.xib in Resources */,
 				9D15750F1CB1B27500EA395E /* LaunchScreen.storyboard in Resources */,
 				9D15750C1CB1B27500EA395E /* Assets.xcassets in Resources */,
 			);
@@ -427,10 +448,13 @@
 				B7B2F2CC219F0C3100082CE3 /* Book.swift in Sources */,
 				CEB934DD1D21992100DF75C2 /* Environment.swift in Sources */,
 				B7B2F2C9219F077800082CE3 /* LibraryCell.swift in Sources */,
+				B722F297219F59500080B80B /* TabBarController.swift in Sources */,
 				E1530D9C1ED37905002A9002 /* RollbarService.swift in Sources */,
 				9D1575051CB1B27500EA395E /* AppDelegate.swift in Sources */,
 				B7DD31F6219DFF900080D1B7 /* LibraryView.swift in Sources */,
 				B7DD31F7219DFF900080D1B7 /* LibraryViewModel.swift in Sources */,
+				B722F298219F59500080B80B /* TabBarView.swift in Sources */,
+				B722F299219F59500080B80B /* TabBarViewModel.swift in Sources */,
 				B7DD31F5219DFF900080D1B7 /* LibraryController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
