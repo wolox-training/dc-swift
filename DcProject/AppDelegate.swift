@@ -12,7 +12,6 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     let navController = UINavigationController(rootViewController: LibraryController(viewModel: LibraryViewModel()))
-    let tabBarController = UINavigationController(rootViewController: Tabb)
     
     var window: UIWindow?
     
@@ -31,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          */
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = tabBarController
+        window?.rootViewController = navController
         window?.makeKeyAndVisible()
         
         return true

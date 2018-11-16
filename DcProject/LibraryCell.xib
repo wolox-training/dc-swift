@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LibraryCell" customModule="DcProject" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LibraryCell" customModule="DcProject" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
@@ -56,16 +56,6 @@
             </connections>
             <point key="canvasLocation" x="-39.200000000000003" y="-139.880059970015"/>
         </view>
-        <tabBar contentMode="scaleToFill" id="c0Q-X5-GAf">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-            <items>
-                <tabBarItem systemItem="favorites" id="pk6-8x-kQ2"/>
-                <tabBarItem systemItem="more" id="JDH-fB-8Qk"/>
-            </items>
-            <point key="canvasLocation" x="-246" y="-313"/>
-        </tabBar>
     </objects>
     <resources>
         <image name="book" width="150" height="240"/>

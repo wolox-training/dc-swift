@@ -41,7 +41,6 @@ final class LibraryController: UIViewController {
         
         title = "LIBRARY"
         
-        
         navigationController?.navigationBar.titleTextAttributes = textAttributes
         
         let searchButton = UIBarButtonItem(title: "SEARCH", style: .plain, target: self, action: "press")
@@ -64,8 +63,6 @@ final class LibraryController: UIViewController {
     }
     
 }
-
-
 
 // MARK: - VM binding
 private extension LibraryController {
