@@ -11,7 +11,6 @@
 		0CCF002C219208110061050C /* Wormholy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCF002B219208110061050C /* Wormholy.framework */; };
 		0CCF002E219208180061050C /* WolmoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCF002D219208180061050C /* WolmoCore.framework */; };
 		9D1575051CB1B27500EA395E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1575041CB1B27500EA395E /* AppDelegate.swift */; };
-		9D1575071CB1B27500EA395E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1575061CB1B27500EA395E /* ViewController.swift */; };
 		9D15750C1CB1B27500EA395E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D15750B1CB1B27500EA395E /* Assets.xcassets */; };
 		9D15750F1CB1B27500EA395E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D15750D1CB1B27500EA395E /* LaunchScreen.storyboard */; };
 		9D15751A1CB1B27500EA395E /* DcProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1575191CB1B27500EA395E /* DcProjectTests.swift */; };
@@ -22,6 +21,13 @@
 		9D1F7A751CBED82900E20BE5 /* Quick.framework in Carthage */ = {isa = PBXBuildFile; fileRef = 9D1F7A701CBED81900E20BE5 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9D6E405A1CB1B93A008CE558 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6E40551CB1B939008CE558 /* ReactiveCocoa.framework */; };
 		9D6E405B1CB1B93A008CE558 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6E40561CB1B93A008CE558 /* Result.framework */; };
+		B7B2F2C7219F076C00082CE3 /* LibraryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7B2F2C6219F076C00082CE3 /* LibraryCell.xib */; };
+		B7B2F2C9219F077800082CE3 /* LibraryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B2F2C8219F077800082CE3 /* LibraryCell.swift */; };
+		B7B2F2CC219F0C3100082CE3 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B2F2CB219F0C3100082CE3 /* Book.swift */; };
+		B7DD31F5219DFF900080D1B7 /* LibraryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD31F1219DFF900080D1B7 /* LibraryController.swift */; };
+		B7DD31F6219DFF900080D1B7 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD31F2219DFF900080D1B7 /* LibraryView.swift */; };
+		B7DD31F7219DFF900080D1B7 /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD31F3219DFF900080D1B7 /* LibraryViewModel.swift */; };
+		B7DD31F8219DFF900080D1B7 /* LibraryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7DD31F4219DFF900080D1B7 /* LibraryView.xib */; };
 		CEB934DD1D21992100DF75C2 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB934DC1D21992100DF75C2 /* Environment.swift */; };
 		CED934891E8466A60017CF96 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED934871E8466A60017CF96 /* ReactiveSwift.framework */; };
 		E1530D991ED378F2002A9002 /* Rollbar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1530D981ED378F2002A9002 /* Rollbar.framework */; };
@@ -67,7 +73,6 @@
 		0CCF002D219208180061050C /* WolmoCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WolmoCore.framework; path = Carthage/Build/iOS/WolmoCore.framework; sourceTree = "<group>"; };
 		9D1575011CB1B27500EA395E /* DcProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DcProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1575041CB1B27500EA395E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9D1575061CB1B27500EA395E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9D15750B1CB1B27500EA395E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D15750E1CB1B27500EA395E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D1575101CB1B27500EA395E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,17 +86,20 @@
 		9D1F7A701CBED81900E20BE5 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		9D6E40551CB1B939008CE558 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		9D6E40561CB1B93A008CE558 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		B7B2F2C6219F076C00082CE3 /* LibraryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryCell.xib; sourceTree = "<group>"; };
+		B7B2F2C8219F077800082CE3 /* LibraryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCell.swift; sourceTree = "<group>"; };
+		B7B2F2CB219F0C3100082CE3 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		B7DD31F1219DFF900080D1B7 /* LibraryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryController.swift; sourceTree = "<group>"; };
+		B7DD31F2219DFF900080D1B7 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		B7DD31F3219DFF900080D1B7 /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
+		B7DD31F4219DFF900080D1B7 /* LibraryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryView.xib; sourceTree = "<group>"; };
 		CEB934DC1D21992100DF75C2 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
-		CEB934E11D21A49A00DF75C2 /* Alpha.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Alpha.xcconfig; sourceTree = "<group>"; };
 		CED934861E8466A60017CF96 /* Core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Core.framework; path = Carthage/Build/iOS/Core.framework; sourceTree = "<group>"; };
 		CED934871E8466A60017CF96 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
 		CED9348A1E8466CE0017CF96 /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBProgressHUD.framework; path = Carthage/Build/iOS/MBProgressHUD.framework; sourceTree = "<group>"; };
-		E12DE1621F772A370072C2FF /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		E1530D981ED378F2002A9002 /* Rollbar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rollbar.framework; path = Carthage/Build/iOS/Rollbar.framework; sourceTree = "<group>"; };
 		E1530D9B1ED37905002A9002 /* RollbarService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RollbarService.swift; path = Services/RollbarService.swift; sourceTree = "<group>"; };
 		E1530D9D1ED382EA002A9002 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		E17065121F75B6A10042755C /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
-		E17065131F75B6A10042755C /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,10 +161,10 @@
 		9D1575031CB1B27500EA395E /* DcProject */ = {
 			isa = PBXGroup;
 			children = (
+				B7B2F2CA219F0C1600082CE3 /* Models */,
+				B7DD31F0219DFE620080D1B7 /* Library */,
 				E1530D9A1ED378F9002A9002 /* Services */,
-				CEB934DE1D21A44700DF75C2 /* ConfigurationFiles */,
 				9D1575041CB1B27500EA395E /* AppDelegate.swift */,
-				9D1575061CB1B27500EA395E /* ViewController.swift */,
 				9D15750B1CB1B27500EA395E /* Assets.xcassets */,
 				9D15750D1CB1B27500EA395E /* LaunchScreen.storyboard */,
 				9D1575101CB1B27500EA395E /* Info.plist */,
@@ -202,15 +210,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CEB934DE1D21A44700DF75C2 /* ConfigurationFiles */ = {
+		B7B2F2C5219F074200082CE3 /* LibraryCell */ = {
 			isa = PBXGroup;
 			children = (
-				E17065121F75B6A10042755C /* Debug.xcconfig */,
-				CEB934E11D21A49A00DF75C2 /* Alpha.xcconfig */,
-				E17065131F75B6A10042755C /* Release.xcconfig */,
-				E12DE1621F772A370072C2FF /* Production.xcconfig */,
+				B7B2F2C6219F076C00082CE3 /* LibraryCell.xib */,
+				B7B2F2C8219F077800082CE3 /* LibraryCell.swift */,
 			);
-			path = ConfigurationFiles;
+			name = LibraryCell;
+			sourceTree = "<group>";
+		};
+		B7B2F2CA219F0C1600082CE3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B7B2F2CB219F0C3100082CE3 /* Book.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B7DD31F0219DFE620080D1B7 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				B7B2F2C5219F074200082CE3 /* LibraryCell */,
+				B7DD31F1219DFF900080D1B7 /* LibraryController.swift */,
+				B7DD31F2219DFF900080D1B7 /* LibraryView.swift */,
+				B7DD31F3219DFF900080D1B7 /* LibraryViewModel.swift */,
+				B7DD31F4219DFF900080D1B7 /* LibraryView.xib */,
+			);
+			name = Library;
 			sourceTree = "<group>";
 		};
 		E1530D9A1ED378F9002A9002 /* Services */ = {
@@ -332,6 +358,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7DD31F8219DFF900080D1B7 /* LibraryView.xib in Resources */,
+				B7B2F2C7219F076C00082CE3 /* LibraryCell.xib in Resources */,
 				9D15750F1CB1B27500EA395E /* LaunchScreen.storyboard in Resources */,
 				9D15750C1CB1B27500EA395E /* Assets.xcassets in Resources */,
 			);
@@ -396,10 +424,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D1575071CB1B27500EA395E /* ViewController.swift in Sources */,
+				B7B2F2CC219F0C3100082CE3 /* Book.swift in Sources */,
 				CEB934DD1D21992100DF75C2 /* Environment.swift in Sources */,
+				B7B2F2C9219F077800082CE3 /* LibraryCell.swift in Sources */,
 				E1530D9C1ED37905002A9002 /* RollbarService.swift in Sources */,
 				9D1575051CB1B27500EA395E /* AppDelegate.swift in Sources */,
+				B7DD31F6219DFF900080D1B7 /* LibraryView.swift in Sources */,
+				B7DD31F7219DFF900080D1B7 /* LibraryViewModel.swift in Sources */,
+				B7DD31F5219DFF900080D1B7 /* LibraryController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,7 +480,6 @@
 /* Begin XCBuildConfiguration section */
 		CE39E8751D1DAED00004FE95 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E17065121F75B6A10042755C /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -499,7 +530,6 @@
 		};
 		CE39E8761D1DAED00004FE95 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E17065121F75B6A10042755C /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-debug";
 				CURRENT_PROJECT_VERSION = 1;
@@ -523,7 +553,6 @@
 		};
 		CE39E8771D1DAED00004FE95 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E17065121F75B6A10042755C /* Debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -541,7 +570,6 @@
 		};
 		CE39E8781D1DAED00004FE95 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E17065121F75B6A10042755C /* Debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = DcProjectUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -554,7 +582,6 @@
 		};
 		CE39E8791D1DAEE70004FE95 /* Alpha */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEB934E11D21A49A00DF75C2 /* Alpha.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -604,7 +631,6 @@
 		};
 		CE39E87A1D1DAEE70004FE95 /* Alpha */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEB934E11D21A49A00DF75C2 /* Alpha.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-alpha";
 				CURRENT_PROJECT_VERSION = 1;
@@ -628,7 +654,6 @@
 		};
 		CE39E87B1D1DAEE70004FE95 /* Alpha */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEB934E11D21A49A00DF75C2 /* Alpha.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -646,7 +671,6 @@
 		};
 		CE39E87C1D1DAEE70004FE95 /* Alpha */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEB934E11D21A49A00DF75C2 /* Alpha.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = DcProjectUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -659,7 +683,6 @@
 		};
 		CE39E8811D1DAEF20004FE95 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E17065131F75B6A10042755C /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -709,7 +732,6 @@
 		};
 		CE39E8821D1DAEF20004FE95 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E17065131F75B6A10042755C /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-release";
 				CURRENT_PROJECT_VERSION = 1;
@@ -732,7 +754,6 @@
 		};
 		CE39E8831D1DAEF20004FE95 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E17065131F75B6A10042755C /* Release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -750,7 +771,6 @@
 		};
 		CE39E8841D1DAEF20004FE95 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E17065131F75B6A10042755C /* Release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = DcProjectUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -763,7 +783,6 @@
 		};
 		E12DE15E1F772A1E0072C2FF /* Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E12DE1621F772A370072C2FF /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -812,7 +831,6 @@
 		};
 		E12DE15F1F772A1E0072C2FF /* Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E12DE1621F772A370072C2FF /* Production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-production";
 				CURRENT_PROJECT_VERSION = 1;
@@ -835,7 +853,6 @@
 		};
 		E12DE1601F772A1E0072C2FF /* Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E12DE1621F772A370072C2FF /* Production.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -853,7 +870,6 @@
 		};
 		E12DE1611F772A1E0072C2FF /* Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E12DE1621F772A370072C2FF /* Production.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = DcProjectUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
