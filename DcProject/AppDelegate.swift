@@ -11,7 +11,7 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    let navController = UINavigationController(rootViewController: LibraryController(viewModel: LibraryViewModel()))
+    let navController = UINavigationController(rootViewController: MainController())
     
     var window: UIWindow?
     
@@ -30,28 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          */
         
         
-        let vc1 = UIViewController()
-        vc1.view.backgroundColor = UIColor.orange
-        vc1.tabBarItem.title = "Orange"
-        vc1.tabBarItem.image = UIImage(named: "heart")
-        
-        // Set up the second View Controller
-        let vc2 = UIViewController()
-        vc2.view.backgroundColor = UIColor.purple
-        vc2.tabBarItem.title = "Purple"
-        vc2.tabBarItem.image = UIImage(named: "star")
-        
-        let vc3 = LibraryController(viewModel: LibraryViewModel())
-        vc3.tabBarItem.title = "Red"
-        vc1.tabBarItem.image = UIImage(named: "book")
-        
-        // Set up the Tab Bar Controller to have two tabs
-        let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [vc1, vc2,vc3]
-        
         window = UIWindow(frame: UIScreen.main.bounds)
-//        window?.rootViewController = tabBarController
-//        window?.rootViewController = UINavigationController(rootViewController: TabBarController(viewModel: TabBarViewModel()))
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
         

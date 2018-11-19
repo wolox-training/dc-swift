@@ -13,7 +13,6 @@ final class LibraryController: UIViewController {
     
     private let _viewModel: LibraryViewModel
     private let _view: LibraryView = LibraryView.loadFromNib()!
-    private let textAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
     
     @available(*, unavailable, message: "use init(viewModel:) instead")
     required public init?(coder aDecoder: NSCoder) {
@@ -28,6 +27,9 @@ final class LibraryController: UIViewController {
     init(viewModel: LibraryViewModel) {
         _viewModel = viewModel
         super.init(nibName: .none, bundle: .none)
+        tabBarItem = UITabBarItem(title: "Library", image: UIImage(named: "library"), selectedImage: UIImage(named: "library"))
+        navigationItem.title = "asd"
+        
     }
     
     override public func loadView() {
@@ -38,20 +40,6 @@ final class LibraryController: UIViewController {
         super.viewDidLoad()
         bindViewModel()
         configTable()
-        
-        title = "LIBRARY"
-        
-        navigationController?.navigationBar.titleTextAttributes = textAttributes
-        
-        let searchButton = UIBarButtonItem(title: "SEARCH", style: .plain, target: self, action: "press")
-        let notificationButton = UIBarButtonItem(title: "NOTIFICATION", style: .plain, target: self, action: "press")
-        
-        navigationItem.rightBarButtonItem = searchButton
-        navigationItem.leftBarButtonItem = notificationButton
-        
-        let navBarAppearance: UINavigationBar  = (self.navigationController?.navigationBar)!
-        navBarAppearance.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-        navBarAppearance.shadowImage = UIImage()
     }
     
     func configTable() {

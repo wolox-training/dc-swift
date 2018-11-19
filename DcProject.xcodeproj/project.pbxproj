@@ -21,13 +21,15 @@
 		9D1F7A751CBED82900E20BE5 /* Quick.framework in Carthage */ = {isa = PBXBuildFile; fileRef = 9D1F7A701CBED81900E20BE5 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9D6E405A1CB1B93A008CE558 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6E40551CB1B939008CE558 /* ReactiveCocoa.framework */; };
 		9D6E405B1CB1B93A008CE558 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6E40561CB1B93A008CE558 /* Result.framework */; };
-		B722F297219F59500080B80B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B722F293219F59500080B80B /* TabBarController.swift */; };
-		B722F298219F59500080B80B /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B722F294219F59500080B80B /* TabBarView.swift */; };
-		B722F299219F59500080B80B /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B722F295219F59500080B80B /* TabBarViewModel.swift */; };
-		B722F29A219F59500080B80B /* TabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B722F296219F59500080B80B /* TabBarView.xib */; };
+		B71F0C6921A313AC00C7CEE7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B71F0C6821A313AC00C7CEE7 /* Localizable.strings */; };
 		B7B2F2C7219F076C00082CE3 /* LibraryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7B2F2C6219F076C00082CE3 /* LibraryCell.xib */; };
 		B7B2F2C9219F077800082CE3 /* LibraryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B2F2C8219F077800082CE3 /* LibraryCell.swift */; };
 		B7B2F2CC219F0C3100082CE3 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B2F2CB219F0C3100082CE3 /* Book.swift */; };
+		B7D17F8F21A324CB004664CC /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D17F8E21A324CB004664CC /* MainController.swift */; };
+		B7D17F9521A34F3E004664CC /* WishListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D17F9121A34F3E004664CC /* WishListController.swift */; };
+		B7D17F9621A34F3E004664CC /* WishListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D17F9221A34F3E004664CC /* WishListView.swift */; };
+		B7D17F9721A34F3E004664CC /* WishListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D17F9321A34F3E004664CC /* WishListViewModel.swift */; };
+		B7D17F9821A34F3E004664CC /* WishListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7D17F9421A34F3E004664CC /* WishListView.xib */; };
 		B7DD31F5219DFF900080D1B7 /* LibraryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD31F1219DFF900080D1B7 /* LibraryController.swift */; };
 		B7DD31F6219DFF900080D1B7 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD31F2219DFF900080D1B7 /* LibraryView.swift */; };
 		B7DD31F7219DFF900080D1B7 /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD31F3219DFF900080D1B7 /* LibraryViewModel.swift */; };
@@ -90,13 +92,15 @@
 		9D1F7A701CBED81900E20BE5 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		9D6E40551CB1B939008CE558 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		9D6E40561CB1B93A008CE558 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
-		B722F293219F59500080B80B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		B722F294219F59500080B80B /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
-		B722F295219F59500080B80B /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
-		B722F296219F59500080B80B /* TabBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarView.xib; sourceTree = "<group>"; };
+		B71F0C6821A313AC00C7CEE7 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		B7B2F2C6219F076C00082CE3 /* LibraryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryCell.xib; sourceTree = "<group>"; };
 		B7B2F2C8219F077800082CE3 /* LibraryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCell.swift; sourceTree = "<group>"; };
 		B7B2F2CB219F0C3100082CE3 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		B7D17F8E21A324CB004664CC /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		B7D17F9121A34F3E004664CC /* WishListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListController.swift; sourceTree = "<group>"; };
+		B7D17F9221A34F3E004664CC /* WishListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListView.swift; sourceTree = "<group>"; };
+		B7D17F9321A34F3E004664CC /* WishListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListViewModel.swift; sourceTree = "<group>"; };
+		B7D17F9421A34F3E004664CC /* WishListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WishListView.xib; sourceTree = "<group>"; };
 		B7DD31F1219DFF900080D1B7 /* LibraryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryController.swift; sourceTree = "<group>"; };
 		B7DD31F2219DFF900080D1B7 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		B7DD31F3219DFF900080D1B7 /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
@@ -169,7 +173,7 @@
 		9D1575031CB1B27500EA395E /* DcProject */ = {
 			isa = PBXGroup;
 			children = (
-				B722F292219F59380080B80B /* TabBar */,
+				B7D17F9021A34F09004664CC /* WishList */,
 				B7B2F2CA219F0C1600082CE3 /* Models */,
 				B7DD31F0219DFE620080D1B7 /* Library */,
 				E1530D9A1ED378F9002A9002 /* Services */,
@@ -178,6 +182,8 @@
 				9D15750D1CB1B27500EA395E /* LaunchScreen.storyboard */,
 				9D1575101CB1B27500EA395E /* Info.plist */,
 				CEB934DC1D21992100DF75C2 /* Environment.swift */,
+				B71F0C6821A313AC00C7CEE7 /* Localizable.strings */,
+				B7D17F8E21A324CB004664CC /* MainController.swift */,
 			);
 			path = DcProject;
 			sourceTree = "<group>";
@@ -219,17 +225,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B722F292219F59380080B80B /* TabBar */ = {
-			isa = PBXGroup;
-			children = (
-				B722F293219F59500080B80B /* TabBarController.swift */,
-				B722F294219F59500080B80B /* TabBarView.swift */,
-				B722F295219F59500080B80B /* TabBarViewModel.swift */,
-				B722F296219F59500080B80B /* TabBarView.xib */,
-			);
-			name = TabBar;
-			sourceTree = "<group>";
-		};
 		B7B2F2C5219F074200082CE3 /* LibraryCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +240,17 @@
 				B7B2F2CB219F0C3100082CE3 /* Book.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		B7D17F9021A34F09004664CC /* WishList */ = {
+			isa = PBXGroup;
+			children = (
+				B7D17F9121A34F3E004664CC /* WishListController.swift */,
+				B7D17F9221A34F3E004664CC /* WishListView.swift */,
+				B7D17F9321A34F3E004664CC /* WishListViewModel.swift */,
+				B7D17F9421A34F3E004664CC /* WishListView.xib */,
+			);
+			name = WishList;
 			sourceTree = "<group>";
 		};
 		B7DD31F0219DFE620080D1B7 /* Library */ = {
@@ -379,8 +385,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7DD31F8219DFF900080D1B7 /* LibraryView.xib in Resources */,
+				B7D17F9821A34F3E004664CC /* WishListView.xib in Resources */,
+				B71F0C6921A313AC00C7CEE7 /* Localizable.strings in Resources */,
 				B7B2F2C7219F076C00082CE3 /* LibraryCell.xib in Resources */,
-				B722F29A219F59500080B80B /* TabBarView.xib in Resources */,
 				9D15750F1CB1B27500EA395E /* LaunchScreen.storyboard in Resources */,
 				9D15750C1CB1B27500EA395E /* Assets.xcassets in Resources */,
 			);
@@ -448,13 +455,14 @@
 				B7B2F2CC219F0C3100082CE3 /* Book.swift in Sources */,
 				CEB934DD1D21992100DF75C2 /* Environment.swift in Sources */,
 				B7B2F2C9219F077800082CE3 /* LibraryCell.swift in Sources */,
-				B722F297219F59500080B80B /* TabBarController.swift in Sources */,
+				B7D17F8F21A324CB004664CC /* MainController.swift in Sources */,
+				B7D17F9521A34F3E004664CC /* WishListController.swift in Sources */,
 				E1530D9C1ED37905002A9002 /* RollbarService.swift in Sources */,
 				9D1575051CB1B27500EA395E /* AppDelegate.swift in Sources */,
+				B7D17F9621A34F3E004664CC /* WishListView.swift in Sources */,
 				B7DD31F6219DFF900080D1B7 /* LibraryView.swift in Sources */,
+				B7D17F9721A34F3E004664CC /* WishListViewModel.swift in Sources */,
 				B7DD31F7219DFF900080D1B7 /* LibraryViewModel.swift in Sources */,
-				B722F298219F59500080B80B /* TabBarView.swift in Sources */,
-				B722F299219F59500080B80B /* TabBarViewModel.swift in Sources */,
 				B7DD31F5219DFF900080D1B7 /* LibraryController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
