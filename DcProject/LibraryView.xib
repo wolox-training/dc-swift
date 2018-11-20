@@ -17,25 +17,30 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aLy-we-kzc">
-                    <rect key="frame" x="20" y="153" width="335" height="455"/>
+                    <rect key="frame" x="20" y="130" width="335" height="478"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="478" id="664-gP-arz"/>
+                        <constraint firstAttribute="width" constant="335" id="6kP-yh-ovU"/>
+                    </constraints>
                 </tableView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="Ai8-Hw-oJg">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="125" id="6qf-VG-GOc"/>
+                        <constraint firstAttribute="width" constant="375" id="bSF-DY-Apk"/>
+                        <constraint firstAttribute="height" constant="102" id="rbG-Qr-mu3"/>
                     </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="0.92549019607843142" green="0.96470588235294119" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Ai8-Hw-oJg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6of-vu-bhE"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="aLy-we-kzc" secondAttribute="bottom" constant="59" id="7RW-Qz-Vp5"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="aLy-we-kzc" secondAttribute="trailing" constant="20" id="7Wa-Yq-zrP"/>
-                <constraint firstItem="aLy-we-kzc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="I1M-pi-dx3"/>
-                <constraint firstItem="Ai8-Hw-oJg" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="eZM-Ah-szP"/>
-                <constraint firstItem="Ai8-Hw-oJg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="enE-DB-22y"/>
-                <constraint firstItem="aLy-we-kzc" firstAttribute="top" secondItem="Ai8-Hw-oJg" secondAttribute="bottom" constant="28" id="os2-fM-Cka"/>
+                <constraint firstItem="Ai8-Hw-oJg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="7It-T0-pRG"/>
+                <constraint firstItem="Ai8-Hw-oJg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QC8-Jd-ZLg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="aLy-we-kzc" secondAttribute="trailing" constant="20" id="ZSX-wf-Lha"/>
+                <constraint firstItem="Ai8-Hw-oJg" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="beB-ha-swN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="aLy-we-kzc" secondAttribute="bottom" constant="59" id="ej4-S1-Jgm"/>
+                <constraint firstItem="aLy-we-kzc" firstAttribute="top" secondItem="Ai8-Hw-oJg" secondAttribute="bottom" constant="28" id="gjI-Yu-aXO"/>
+                <constraint firstItem="aLy-we-kzc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="kTJ-aM-PGB"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>

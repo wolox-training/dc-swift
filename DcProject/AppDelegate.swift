@@ -11,8 +11,6 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    let navController = UINavigationController(rootViewController: MainController())
-    
     var window: UIWindow?
     
     func application(_ application: UIApplication,
@@ -29,12 +27,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          *
          */
         
-        
+        configNavbar()
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = navController
+        window?.rootViewController = TabBarController()
         window?.makeKeyAndVisible()
         
         return true
+    }
+    
+    func configNavbar(){
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().backgroundColor = .clear
+        UINavigationBar.appearance().isTranslucent = true
     }
     
     func applicationWillResignActive(_ application: UIApplication) {

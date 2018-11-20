@@ -36,7 +36,7 @@ final class WishListController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     bindViewModel()
-    tabBarItem = UITabBarItem(title: "WishList", image: UIImage(named: "wishlist"), selectedImage: UIImage(named: "wishlist"))
+    navigationItem.title = "WISHLIST"
     
   }
 

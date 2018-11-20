@@ -25,7 +25,7 @@
 		B7B2F2C7219F076C00082CE3 /* LibraryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7B2F2C6219F076C00082CE3 /* LibraryCell.xib */; };
 		B7B2F2C9219F077800082CE3 /* LibraryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B2F2C8219F077800082CE3 /* LibraryCell.swift */; };
 		B7B2F2CC219F0C3100082CE3 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B2F2CB219F0C3100082CE3 /* Book.swift */; };
-		B7D17F8F21A324CB004664CC /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D17F8E21A324CB004664CC /* MainController.swift */; };
+		B7D17F8F21A324CB004664CC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D17F8E21A324CB004664CC /* TabBarController.swift */; };
 		B7D17F9521A34F3E004664CC /* WishListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D17F9121A34F3E004664CC /* WishListController.swift */; };
 		B7D17F9621A34F3E004664CC /* WishListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D17F9221A34F3E004664CC /* WishListView.swift */; };
 		B7D17F9721A34F3E004664CC /* WishListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D17F9321A34F3E004664CC /* WishListViewModel.swift */; };
@@ -96,7 +96,7 @@
 		B7B2F2C6219F076C00082CE3 /* LibraryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryCell.xib; sourceTree = "<group>"; };
 		B7B2F2C8219F077800082CE3 /* LibraryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCell.swift; sourceTree = "<group>"; };
 		B7B2F2CB219F0C3100082CE3 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
-		B7D17F8E21A324CB004664CC /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		B7D17F8E21A324CB004664CC /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		B7D17F9121A34F3E004664CC /* WishListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListController.swift; sourceTree = "<group>"; };
 		B7D17F9221A34F3E004664CC /* WishListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListView.swift; sourceTree = "<group>"; };
 		B7D17F9321A34F3E004664CC /* WishListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListViewModel.swift; sourceTree = "<group>"; };
@@ -183,7 +183,7 @@
 				9D1575101CB1B27500EA395E /* Info.plist */,
 				CEB934DC1D21992100DF75C2 /* Environment.swift */,
 				B71F0C6821A313AC00C7CEE7 /* Localizable.strings */,
-				B7D17F8E21A324CB004664CC /* MainController.swift */,
+				B7D17F8E21A324CB004664CC /* TabBarController.swift */,
 			);
 			path = DcProject;
 			sourceTree = "<group>";
@@ -455,7 +455,7 @@
 				B7B2F2CC219F0C3100082CE3 /* Book.swift in Sources */,
 				CEB934DD1D21992100DF75C2 /* Environment.swift in Sources */,
 				B7B2F2C9219F077800082CE3 /* LibraryCell.swift in Sources */,
-				B7D17F8F21A324CB004664CC /* MainController.swift in Sources */,
+				B7D17F8F21A324CB004664CC /* TabBarController.swift in Sources */,
 				B7D17F9521A34F3E004664CC /* WishListController.swift in Sources */,
 				E1530D9C1ED37905002A9002 /* RollbarService.swift in Sources */,
 				9D1575051CB1B27500EA395E /* AppDelegate.swift in Sources */,
