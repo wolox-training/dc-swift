@@ -36,7 +36,7 @@ final class WishListController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     bindViewModel()
-    navigationItem.title = "WISHLIST"
+    navigationItem.title = "NAVBAR-TITLE-WISHLIST".localized()
     
   }
 

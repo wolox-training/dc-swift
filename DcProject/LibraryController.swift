@@ -42,7 +42,6 @@ final class LibraryController: UIViewController {
     }
     
     func configTable() {
-        _view.tableBooks.delegate = self
         _view.tableBooks.register(cell: LibraryCell.self)
         _view.tableBooks.dataSource = self
         _view.tableBooks.rowHeight = 90
@@ -64,11 +63,6 @@ private extension LibraryController {
     private func bindViewModel() {
         
     }
-    
-}
-
-extension LibraryController: UITableViewDelegate {
-    
 }
 
 extension LibraryController: UITableViewDataSource {
