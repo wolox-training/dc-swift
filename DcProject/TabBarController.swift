@@ -19,7 +19,11 @@ final class TabBarController: UITabBarController, UITabBarControllerDelegate, UI
     }
     
     func setUpTabBarControllers() {
-        let libraryController = LibraryController(viewModel: LibraryViewModel())
+        
+        let libraryController = LibraryController(viewModel: LibraryViewModel(repository: BookRepository(
+            networkingConfiguration: RepositoryBuilder.DefaultNetworkingConfiguration,
+            sessionManager: SessionManagerService.shared)))
+        
         let navLibraryController = UINavigationController(rootViewController: libraryController)
         libraryController.tabBarItem = UITabBarItem(
             title: "TABBAR-LIBRARY".localized(),

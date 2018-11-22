@@ -22,6 +22,19 @@
 		9D6E405A1CB1B93A008CE558 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6E40551CB1B939008CE558 /* ReactiveCocoa.framework */; };
 		9D6E405B1CB1B93A008CE558 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6E40561CB1B93A008CE558 /* Result.framework */; };
 		B71F0C6921A313AC00C7CEE7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B71F0C6821A313AC00C7CEE7 /* Localizable.strings */; };
+		B720D52421A5E4490078A50C /* BookRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B720D52321A5E4490078A50C /* BookRepository.swift */; };
+		B720D52621A5F4080078A50C /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B720D52521A5F4080078A50C /* Argo.framework */; };
+		B720D52821A5F40D0078A50C /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B720D52721A5F40D0078A50C /* Curry.framework */; };
+		B720D52C21A5F42A0078A50C /* Runes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B720D52B21A5F42A0078A50C /* Runes.framework */; };
+		B720D52D21A5F55F0078A50C /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B720D52921A5F4220078A50C /* Networking.framework */; };
+		B720D52F21A5F5940078A50C /* KeychainSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B720D52E21A5F5940078A50C /* KeychainSwift.framework */; };
+		B720D53121A5F5DE0078A50C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B720D53021A5F5DE0078A50C /* Alamofire.framework */; };
+		B720D53321A5F5F90078A50C /* AlamofireNetworkActivityIndicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B720D53221A5F5F90078A50C /* AlamofireNetworkActivityIndicator.framework */; };
+		B720D53521A5F6030078A50C /* AlamofireNetworkActivityLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B720D53421A5F6030078A50C /* AlamofireNetworkActivityLogger.framework */; };
+		B720D53721A5F74E0078A50C /* RepositoryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B720D53621A5F74E0078A50C /* RepositoryBuilder.swift */; };
+		B720D53921A5F8400078A50C /* SessionManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B720D53821A5F8400078A50C /* SessionManagerService.swift */; };
+		B720D53B21A5F9080078A50C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B720D53A21A5F9080078A50C /* User.swift */; };
+		B75A2E2521A7391600DC67DC /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75A2E2421A7391600DC67DC /* Kingfisher.framework */; };
 		B7B2F2C7219F076C00082CE3 /* LibraryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7B2F2C6219F076C00082CE3 /* LibraryCell.xib */; };
 		B7B2F2C9219F077800082CE3 /* LibraryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B2F2C8219F077800082CE3 /* LibraryCell.swift */; };
 		B7B2F2CC219F0C3100082CE3 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B2F2CB219F0C3100082CE3 /* Book.swift */; };
@@ -93,6 +106,19 @@
 		9D6E40551CB1B939008CE558 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		9D6E40561CB1B93A008CE558 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		B71F0C6821A313AC00C7CEE7 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		B720D52321A5E4490078A50C /* BookRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRepository.swift; sourceTree = "<group>"; };
+		B720D52521A5F4080078A50C /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/iOS/Argo.framework; sourceTree = "<group>"; };
+		B720D52721A5F40D0078A50C /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = Carthage/Build/iOS/Curry.framework; sourceTree = "<group>"; };
+		B720D52921A5F4220078A50C /* Networking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Networking.framework; path = Carthage/Build/iOS/Networking.framework; sourceTree = "<group>"; };
+		B720D52B21A5F42A0078A50C /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = Carthage/Build/iOS/Runes.framework; sourceTree = "<group>"; };
+		B720D52E21A5F5940078A50C /* KeychainSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainSwift.framework; path = Carthage/Build/iOS/KeychainSwift.framework; sourceTree = "<group>"; };
+		B720D53021A5F5DE0078A50C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		B720D53221A5F5F90078A50C /* AlamofireNetworkActivityIndicator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireNetworkActivityIndicator.framework; path = Carthage/Build/iOS/AlamofireNetworkActivityIndicator.framework; sourceTree = "<group>"; };
+		B720D53421A5F6030078A50C /* AlamofireNetworkActivityLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireNetworkActivityLogger.framework; path = Carthage/Build/iOS/AlamofireNetworkActivityLogger.framework; sourceTree = "<group>"; };
+		B720D53621A5F74E0078A50C /* RepositoryBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryBuilder.swift; sourceTree = "<group>"; };
+		B720D53821A5F8400078A50C /* SessionManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManagerService.swift; sourceTree = "<group>"; };
+		B720D53A21A5F9080078A50C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B75A2E2421A7391600DC67DC /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		B7B2F2C6219F076C00082CE3 /* LibraryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryCell.xib; sourceTree = "<group>"; };
 		B7B2F2C8219F077800082CE3 /* LibraryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCell.swift; sourceTree = "<group>"; };
 		B7B2F2CB219F0C3100082CE3 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
@@ -126,7 +152,16 @@
 				0CCF002C219208110061050C /* Wormholy.framework in Frameworks */,
 				0CCF002E219208180061050C /* WolmoCore.framework in Frameworks */,
 				9D6E405A1CB1B93A008CE558 /* ReactiveCocoa.framework in Frameworks */,
+				B720D52621A5F4080078A50C /* Argo.framework in Frameworks */,
+				B720D52821A5F40D0078A50C /* Curry.framework in Frameworks */,
+				B720D52C21A5F42A0078A50C /* Runes.framework in Frameworks */,
 				9D6E405B1CB1B93A008CE558 /* Result.framework in Frameworks */,
+				B720D52D21A5F55F0078A50C /* Networking.framework in Frameworks */,
+				B720D52F21A5F5940078A50C /* KeychainSwift.framework in Frameworks */,
+				B720D53121A5F5DE0078A50C /* Alamofire.framework in Frameworks */,
+				B720D53321A5F5F90078A50C /* AlamofireNetworkActivityIndicator.framework in Frameworks */,
+				B720D53521A5F6030078A50C /* AlamofireNetworkActivityLogger.framework in Frameworks */,
+				B75A2E2521A7391600DC67DC /* Kingfisher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +208,7 @@
 		9D1575031CB1B27500EA395E /* DcProject */ = {
 			isa = PBXGroup;
 			children = (
+				B720D52121A5E3C20078A50C /* Repository */,
 				B7D17F9021A34F09004664CC /* WishList */,
 				B7B2F2CA219F0C1600082CE3 /* Models */,
 				B7DD31F0219DFE620080D1B7 /* Library */,
@@ -209,6 +245,15 @@
 		9D6E405F1CB1BA21008CE558 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B75A2E2421A7391600DC67DC /* Kingfisher.framework */,
+				B720D53421A5F6030078A50C /* AlamofireNetworkActivityLogger.framework */,
+				B720D53221A5F5F90078A50C /* AlamofireNetworkActivityIndicator.framework */,
+				B720D53021A5F5DE0078A50C /* Alamofire.framework */,
+				B720D52E21A5F5940078A50C /* KeychainSwift.framework */,
+				B720D52B21A5F42A0078A50C /* Runes.framework */,
+				B720D52921A5F4220078A50C /* Networking.framework */,
+				B720D52721A5F40D0078A50C /* Curry.framework */,
+				B720D52521A5F4080078A50C /* Argo.framework */,
 				0CCF002D219208180061050C /* WolmoCore.framework */,
 				0CCF002B219208110061050C /* Wormholy.framework */,
 				0CCF0029219208080061050C /* WolmoReactiveCore.framework */,
@@ -225,6 +270,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B720D52121A5E3C20078A50C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				B720D52321A5E4490078A50C /* BookRepository.swift */,
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
 		B7B2F2C5219F074200082CE3 /* LibraryCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				B7B2F2CB219F0C3100082CE3 /* Book.swift */,
+				B720D53A21A5F9080078A50C /* User.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -269,6 +323,8 @@
 			isa = PBXGroup;
 			children = (
 				E1530D9B1ED37905002A9002 /* RollbarService.swift */,
+				B720D53621A5F74E0078A50C /* RepositoryBuilder.swift */,
+				B720D53821A5F8400078A50C /* SessionManagerService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -423,6 +479,16 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Rollbar.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Wormholy.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/WolmoReactiveCore.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Argo.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Curry.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Runes.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Networking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/KeychainSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireNetworkActivityIndicator.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireNetworkActivityLogger.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
 			);
 			name = Carthage;
 			outputPaths = (
@@ -453,12 +519,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7B2F2CC219F0C3100082CE3 /* Book.swift in Sources */,
+				B720D53721A5F74E0078A50C /* RepositoryBuilder.swift in Sources */,
 				CEB934DD1D21992100DF75C2 /* Environment.swift in Sources */,
 				B7B2F2C9219F077800082CE3 /* LibraryCell.swift in Sources */,
+				B720D53B21A5F9080078A50C /* User.swift in Sources */,
 				B7D17F8F21A324CB004664CC /* TabBarController.swift in Sources */,
 				B7D17F9521A34F3E004664CC /* WishListController.swift in Sources */,
 				E1530D9C1ED37905002A9002 /* RollbarService.swift in Sources */,
 				9D1575051CB1B27500EA395E /* AppDelegate.swift in Sources */,
+				B720D52421A5E4490078A50C /* BookRepository.swift in Sources */,
+				B720D53921A5F8400078A50C /* SessionManagerService.swift in Sources */,
 				B7D17F9621A34F3E004664CC /* WishListView.swift in Sources */,
 				B7DD31F6219DFF900080D1B7 /* LibraryView.swift in Sources */,
 				B7D17F9721A34F3E004664CC /* WishListViewModel.swift in Sources */,

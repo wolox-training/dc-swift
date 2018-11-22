@@ -9,3 +9,9 @@ github "rollbar/rollbar-ios" "master"
 
 # Requests logger
 github "pmusolino/Wormholy" ~> 1.1.3
+
+# Wolmo Networking
+github "Wolox/wolmo-networking-ios" ~> 1.1.0
+
+# Kingfisher
+github "onevcat/Kingfisher" ~> 4.10.0

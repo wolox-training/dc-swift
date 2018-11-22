@@ -7,11 +7,22 @@
 //
 
 import Foundation
+import Networking
+import ReactiveSwift
 
 final class LibraryViewModel {
-
-  init() {
     
-  }
-
+    private let _booksRepository: BookRepository
+    let books: MutableProperty<[Book]> = MutableProperty([])
+    
+    init(repository: BookRepository) {
+        _booksRepository = repository
+    }
+    
+    public func getBooks() -> SignalProducer<[Book], RepositoryError> {
+        
+        return _booksRepository.getBooks()
+        
+    }
+    
 }
