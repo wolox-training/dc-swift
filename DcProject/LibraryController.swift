@@ -94,5 +94,4 @@ extension LibraryController: UITableViewDataSource {
         
         return cell!
     }
-    
 }
