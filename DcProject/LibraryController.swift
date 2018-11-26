@@ -39,8 +39,6 @@ final class LibraryController: UIViewController {
         configTable()
         confingNavBar()
         requestBooks()
-        
-        
     }
     
     func configTable() {
@@ -61,11 +59,11 @@ final class LibraryController: UIViewController {
         _viewModel.getBooks().startWithResult { result in
             switch result {
             case .success(let books):
-                print("Request Success!")
+                NSLog("Request Success")
                 self._viewModel.books.value = books
                 
             case .failure(let error):
-                print(error.localizedDescription)
+                NSLog(error.localizedDescription)
             }
         }
     }
