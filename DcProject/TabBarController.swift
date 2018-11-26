@@ -19,19 +19,23 @@ final class TabBarController: UITabBarController, UITabBarControllerDelegate, UI
     }
     
     func setUpTabBarControllers() {
-        let libraryController = LibraryController(viewModel: LibraryViewModel())
+        
+        let libraryController = LibraryController(viewModel: LibraryViewModel(repository: BookRepository(
+            networkingConfiguration: RepositoryBuilder.DefaultNetworkingConfiguration,
+            sessionManager: SessionManagerService.shared)))
+        
         let navLibraryController = UINavigationController(rootViewController: libraryController)
         libraryController.tabBarItem = UITabBarItem(
             title: "TABBAR-LIBRARY".localized(),
-            image: UIImage(named: "ICON-LIBRARY".localized()),
-            selectedImage: UIImage(named: "ICON-LIBRARY".localized()))
+            image: UIImage(named: "library"),
+            selectedImage: UIImage(named: "library"))
         
         let wishListController = WishListController(viewModel: WishListViewModel())
         let navWishListController = UINavigationController(rootViewController: wishListController)
         wishListController.tabBarItem = UITabBarItem(
             title: "TABBAR-WISHLIST".localized(),
-            image: UIImage(named: "ICON-WISHLIST".localized()),
-            selectedImage: UIImage(named: "ICON-WISHLIST".localized()))
+            image: UIImage(named: "wishlist"),
+            selectedImage: UIImage(named: "wishlist"))
         
         viewControllers = [navLibraryController, navWishListController]
     }

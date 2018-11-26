@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import WolmoCore
+import Kingfisher
 
 public class LibraryCell: UITableViewCell, NibLoadable {
     
@@ -20,6 +21,14 @@ public class LibraryCell: UITableViewCell, NibLoadable {
         
         bookTitle.text = book.title
         bookAuthor.text = book.author
+        
+        if let url = URL(string: book.image) {
+            let resource = ImageResource(downloadURL: url)
+            bookImage.kf.indicatorType = .activity
+            bookImage.kf.setImage(with: resource, options: [.transition(ImageTransition.fade(1))])
+        } else {
+            bookImage.image = #imageLiteral(resourceName: "book")
+        }
         
     }
 }

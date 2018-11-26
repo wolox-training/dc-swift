@@ -27,7 +27,6 @@ final class LibraryController: UIViewController {
     init(viewModel: LibraryViewModel) {
         _viewModel = viewModel
         super.init(nibName: .none, bundle: .none)
-        
     }
     
     override public func loadView() {
@@ -39,6 +38,7 @@ final class LibraryController: UIViewController {
         bindViewModel()
         configTable()
         confingNavBar()
+        requestBooks()
     }
     
     func configTable() {
@@ -55,29 +55,41 @@ final class LibraryController: UIViewController {
         navigationItem.title = "NAVBAR-TITLE-LIBRARY".localized()
     }
     
+    func requestBooks(){
+        _viewModel.getBooks().startWithResult { result in
+            switch result {
+            case .success(let books):
+                NSLog("Request Success")
+                self._viewModel.books.value = books
+                
+            case .failure(let error):
+                NSLog(error.localizedDescription)
+            }
+        }
+    }
+    
 }
 
 // MARK: - VM binding
 private extension LibraryController {
     
     private func bindViewModel() {
-        
+        _viewModel.books.signal.observeValues { [unowned self] books in
+            self._view.tableBooks.reloadData()
+        }
     }
 }
 
 extension LibraryController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return _viewModel.books.value.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeue(cell: LibraryCell.self)
-        let book = Book.init(title: "A Little Bird Told Me", author: "Timothy Cross", image: URL(string: "www.google.com")!)
-        cell?.confingCell(book: book)
+        cell?.confingCell(book: _viewModel.books.value[indexPath.row])
         
         return cell!
     }
-    
 }

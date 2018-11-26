@@ -4,6 +4,7 @@
 "NAVBAR-TITLE-ADDNEW" = "ADD NEW";
 "NAVBAR-TITLE-RENTALS" = "RENTALS";
 "NAVBAR-TITLE-SETTINGS" = "SETTINGS";
+"NAVBAR-TITLE-BOOKDETAIL" = "BOOK DETAIL";
 
 /*TABBAR*/
 "TABBAR-LIBRARY" = "Library";
@@ -11,11 +12,3 @@
 "TABBAR-ADDNEW" = "Add New";
 "TABBAR-RENTALS" = "Rentals";
 "TABBAR-SETTINGS" = "Settings";
-
-/*ICON-TABBAR*/
-"ICON-LIBRARY" = "library";
-"ICON-WISHLIST" = "wishlist";
-"ICON-ADDNEW" = "addnew";
-"ICON-RENTALS" = "rentals";
-"ICON-SETTINGS" = "settings";
-

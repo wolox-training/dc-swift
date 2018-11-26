@@ -10,7 +10,7 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
+
     var window: UIWindow?
     
     func application(_ application: UIApplication,
@@ -26,6 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          RollbarService().initialize()
          *
          */
+        let user = User()
+        SessionManagerService.shared.bootstrap()
+        SessionManagerService.shared.logout()
+        SessionManagerService.shared.login(user: user)
         
         configNavbar()
         window = UIWindow(frame: UIScreen.main.bounds)
