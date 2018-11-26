@@ -9,8 +9,11 @@
 import Foundation
 
 final class BookDetailViewModel {
-
-  init() {
-  }
-
+    
+    let detailBook: Book
+    
+    init(book: Book) {
+        detailBook = book
+    }
+    
 }
