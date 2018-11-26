@@ -15,10 +15,17 @@ import WolmoReactiveCore
 
 public class BookRepository: AbstractRepository  {
     
+    
+    
     public func getBooks() -> SignalProducer<[Book], RepositoryError> {
         
-        return performRequest(method: .get, path: "/books") { response in
+        return performRequest(method: .get, path: BookRepository.BooksPath) { response in
             return decode(response).toResult()
         }
     }
+}
+
+//    MARK: Paths
+private extension BookRepository {
+    static let BooksPath: String = "/books"
 }
