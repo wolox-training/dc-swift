@@ -12,11 +12,3 @@
 "TABBAR-ADDNEW" = "Add New";
 "TABBAR-RENTALS" = "Rentals";
 "TABBAR-SETTINGS" = "Settings";
-
-/*ICON-TABBAR*/
-"ICON-LIBRARY" = "library";
-"ICON-WISHLIST" = "wishlist";
-"ICON-ADDNEW" = "addnew";
-"ICON-RENTALS" = "rentals";
-"ICON-SETTINGS" = "settings";
-
