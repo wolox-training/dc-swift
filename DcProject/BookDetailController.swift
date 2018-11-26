@@ -40,7 +40,7 @@ final class BookDetailController: UIViewController {
     }
     
     func confingNavBar(){
-        navigationItem.title = "BOOK DETAIL"
+        navigationItem.title = "NAVBAR-TITLE-BOOKDETAIL".localized()
     }
     
 }
