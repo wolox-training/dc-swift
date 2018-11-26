@@ -27,23 +27,16 @@ final class TabBarController: UITabBarController, UITabBarControllerDelegate, UI
         let navLibraryController = UINavigationController(rootViewController: libraryController)
         libraryController.tabBarItem = UITabBarItem(
             title: "TABBAR-LIBRARY".localized(),
-            image: UIImage(named: "ICON-LIBRARY".localized()),
-            selectedImage: UIImage(named: "ICON-LIBRARY".localized()))
+            image: UIImage(named: "library"),
+            selectedImage: UIImage(named: "library"))
         
         let wishListController = WishListController(viewModel: WishListViewModel())
         let navWishListController = UINavigationController(rootViewController: wishListController)
         wishListController.tabBarItem = UITabBarItem(
             title: "TABBAR-WISHLIST".localized(),
-            image: UIImage(named: "ICON-WISHLIST".localized()),
-            selectedImage: UIImage(named: "ICON-WISHLIST".localized()))
+            image: UIImage(named: "wishlist"),
+            selectedImage: UIImage(named: "wishlist"))
         
-        let bookDetailController = BookDetailController(viewModel: BookDetailViewModel())
-        let navBookDetail = UINavigationController(rootViewController: bookDetailController)
-        bookDetailController.tabBarItem = UITabBarItem(
-            title: "BOOKDETAIL",
-            image: UIImage(named: "ICON-WISHLIST".localized()),
-            selectedImage: UIImage(named: "ICON-WISHLIST".localized()))
-        
-        viewControllers = [navLibraryController, navWishListController, navBookDetail]
+        viewControllers = [navLibraryController, navWishListController]
     }
 }
