@@ -35,21 +35,10 @@ final class BookDetailController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        bindViewModel()
         confingNavBar()
     }
     
     func confingNavBar(){
         navigationItem.title = "NAVBAR-TITLE-BOOKDETAIL".localized()
     }
-    
-}
-
-// MARK: - VM binding
-private extension BookDetailController {
-    
-    private func bindViewModel() {
-        
-    }
-    
 }
