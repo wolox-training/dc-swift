@@ -30,20 +30,7 @@ final class BookDetailView: UIView, NibLoadable {
 private extension BookDetailView {
     
     private func setUpViews() {
-        btnAddToWishlist.layer.cornerRadius = 20
-        btnAddToWishlist.layer.borderWidth = 1
-        btnAddToWishlist.layer.borderColor = UIColor(red:0, green:0.68, blue:0.93, alpha:1).cgColor
-        
-        btnRent.layer.cornerRadius = 20
-        let gradient = CAGradientLayer()
-        gradient.frame = CGRect(x: 0, y: 0, width: 275, height: 44)
-        gradient.colors = [
-            UIColor(red:0, green:0.68, blue:0.93, alpha:1).cgColor,
-            UIColor(red:0.22, green:0.8, blue:0.8, alpha:1).cgColor]
-        gradient.locations = [0, 1]
-        gradient.startPoint = CGPoint(x: 0.06, y: 0.5)
-        gradient.endPoint = CGPoint(x: 1, y: 0.5)
-        gradient.cornerRadius = 20
-        btnRent.layer.addSublayer(gradient)
+        btnAddToWishlist.round(color: UIColor(red: 0, green: 0.68, blue: 0.93, alpha: 1), border: 1.0)
+        btnRent.gradient(border: 0.0)
     }
 }
