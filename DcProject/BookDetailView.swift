@@ -11,18 +11,25 @@ import UIKit
 import WolmoCore
 
 final class BookDetailView: UIView, NibLoadable {
-
-  override func awakeFromNib() {
-      super.awakeFromNib()
-      setUpViews()
-  }
-
+    
+    @IBOutlet weak var bookDetailName: UILabel!
+    @IBOutlet weak var bookDetailStatus: UILabel!
+    @IBOutlet weak var bookDetailAuthor: UILabel!
+    @IBOutlet weak var bookDetailYear: UILabel!
+    @IBOutlet weak var bookDetailGenre: UILabel!
+    @IBOutlet weak var bookDetailImage: UIImageView!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        setUpViews()
+    }
+    
 }
 
 private extension BookDetailView {
-
-  private func setUpViews() {
-      
-  }
-
+    
+    private func setUpViews() {
+        
+    }
+    
 }
