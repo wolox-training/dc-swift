@@ -42,10 +42,12 @@ final class BookDetailController: UIViewController {
     
     func configDetail() {
         _view.bookDetailName.text = _viewModel.detailBook.title
-        _view.bookDetailStatus.text = "Available"
+        _view.bookDetailStatus.text = "DETAIL-BOOK-STATUS".localized()
         _view.bookDetailAuthor.text = _viewModel.detailBook.author
         _view.bookDetailYear.text = _viewModel.detailBook.year
         _view.bookDetailGenre.text = _viewModel.detailBook.genre
+        _view.btnAddToWishlist.setTitle("DETAIL-BOOK-BTN-ADD-TO-WISHLIST".localized(), for: .normal)
+        _view.btnRent.setTitle("DETAIL-BOOK-BTN-RENT".localized(), for: .normal)
         if let url = URL(string: _viewModel.detailBook.image) {
             let resource = ImageResource(downloadURL: url)
             _view.bookDetailImage.kf.indicatorType = .activity

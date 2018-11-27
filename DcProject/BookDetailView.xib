@@ -66,14 +66,14 @@
                                         <constraint firstAttribute="height" constant="44" id="jgO-Nd-Odf"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
-                                    <state key="normal" title="ADD TO WISHLIST">
+                                    <state key="normal" title="addtowishlist">
                                         <color key="titleColor" red="0.0" green="0.68000000000000005" blue="0.93000000000000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VS3-jg-qZT">
                                     <rect key="frame" x="0.0" y="52" width="275" height="44"/>
                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
-                                    <state key="normal" title="RENT">
+                                    <state key="normal" title="rent">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
                                 </button>
