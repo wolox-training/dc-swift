@@ -24,28 +24,28 @@
                     </constraints>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iDZ-LX-SJh">
-                    <rect key="frame" x="20" y="123" width="335" height="269"/>
+                    <rect key="frame" x="20" y="123" width="335" height="270"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MjU-wH-5eb">
-                            <rect key="frame" x="119" y="43.5" width="196" height="21"/>
+                            <rect key="frame" x="119" y="43.5" width="196" height="20.5"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                             <color key="textColor" red="0.55655468009432785" green="0.86636286308317623" blue="0.091912492622636954" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSt-lC-VgX">
-                            <rect key="frame" x="119" y="67" width="196" height="21"/>
+                            <rect key="frame" x="119" y="66.5" width="196" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.41163116869999999" green="0.41720933119999998" blue="0.4457637807" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouY-7a-Wiy">
-                            <rect key="frame" x="119" y="90.5" width="196" height="21"/>
+                            <rect key="frame" x="119" y="89.5" width="196" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.41163116869999999" green="0.41720933119999998" blue="0.4457637807" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ho-Bo-xRc">
-                            <rect key="frame" x="119" y="114" width="196" height="21"/>
+                            <rect key="frame" x="119" y="112.5" width="196" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.41163116869999999" green="0.41720933119999998" blue="0.4457637807" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <nil key="highlightedColor"/>
@@ -57,17 +57,36 @@
                                 <constraint firstAttribute="height" constant="105" id="q2V-Va-ndm"/>
                             </constraints>
                         </imageView>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkV-7A-hOG">
-                            <rect key="frame" x="103" y="185" width="129" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="ADD TO WISHLIST"/>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VS3-jg-qZT">
-                            <rect key="frame" x="144" y="223" width="46" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Button"/>
-                        </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name book" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dj-j6-Bdd">
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UwW-UL-mUd">
+                            <rect key="frame" x="30" y="152" width="275" height="96"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkV-7A-hOG">
+                                    <rect key="frame" x="0.0" y="0.0" width="275" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="jgO-Nd-Odf"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                    <state key="normal" title="ADD TO WISHLIST">
+                                        <color key="titleColor" red="0.0" green="0.68000000000000005" blue="0.93000000000000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VS3-jg-qZT">
+                                    <rect key="frame" x="0.0" y="52" width="275" height="44"/>
+                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                    <state key="normal" title="RENT">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="VS3-jg-qZT" firstAttribute="leading" secondItem="UwW-UL-mUd" secondAttribute="leading" id="BVo-4T-X32"/>
+                                <constraint firstAttribute="trailing" secondItem="IkV-7A-hOG" secondAttribute="trailing" id="UbB-mn-TN2"/>
+                                <constraint firstAttribute="bottom" secondItem="VS3-jg-qZT" secondAttribute="bottom" id="YJg-36-hL5"/>
+                                <constraint firstItem="IkV-7A-hOG" firstAttribute="leading" secondItem="UwW-UL-mUd" secondAttribute="leading" id="hl1-K4-zti"/>
+                                <constraint firstAttribute="trailing" secondItem="VS3-jg-qZT" secondAttribute="trailing" id="qlN-il-Xfd"/>
+                            </constraints>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name book" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dj-j6-Bdd">
                             <rect key="frame" x="119" y="17" width="196" height="21.5"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                             <color key="textColor" red="0.25529717120000001" green="0.25875679540000002" blue="0.27646650909999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -85,6 +104,10 @@
                         <constraint firstItem="4Ho-Bo-xRc" firstAttribute="top" secondItem="ouY-7a-Wiy" secondAttribute="bottom" constant="2.5" id="F6i-eQ-w6b"/>
                         <constraint firstItem="ouY-7a-Wiy" firstAttribute="leading" secondItem="XEt-vI-vtd" secondAttribute="trailing" constant="20" id="HrH-mw-1Pr"/>
                         <constraint firstItem="MjU-wH-5eb" firstAttribute="top" secondItem="7dj-j6-Bdd" secondAttribute="bottom" constant="5" id="JHi-bp-r8R"/>
+                        <constraint firstAttribute="trailing" secondItem="UwW-UL-mUd" secondAttribute="trailing" constant="30" id="PQN-uh-w4O"/>
+                        <constraint firstAttribute="bottom" secondItem="UwW-UL-mUd" secondAttribute="bottom" constant="22" id="RGY-24-Ka5"/>
+                        <constraint firstItem="UwW-UL-mUd" firstAttribute="leading" secondItem="iDZ-LX-SJh" secondAttribute="leading" constant="30" id="VyO-Ms-5iM"/>
+                        <constraint firstAttribute="height" constant="270" id="ZMH-ZQ-kgg"/>
                         <constraint firstAttribute="trailing" secondItem="MjU-wH-5eb" secondAttribute="trailing" constant="20" id="ar9-ZQ-zlQ"/>
                         <constraint firstItem="XEt-vI-vtd" firstAttribute="top" secondItem="iDZ-LX-SJh" secondAttribute="top" constant="15" id="cVH-Do-ca2"/>
                         <constraint firstAttribute="trailing" secondItem="7dj-j6-Bdd" secondAttribute="trailing" constant="20" id="evJ-v0-elj"/>
@@ -103,7 +126,6 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="iDZ-LX-SJh" secondAttribute="trailing" constant="20" id="EaZ-8z-Mjn"/>
                 <constraint firstItem="iDZ-LX-SJh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="I4R-VW-kKF"/>
                 <constraint firstItem="iDZ-LX-SJh" firstAttribute="top" secondItem="kRb-rQ-ORO" secondAttribute="bottom" constant="21" id="gxo-cX-fKq"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="iDZ-LX-SJh" secondAttribute="bottom" constant="275" id="lT0-bq-Xrq"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
@@ -113,6 +135,8 @@
                 <outlet property="bookDetailName" destination="7dj-j6-Bdd" id="5ZG-vW-HOd"/>
                 <outlet property="bookDetailStatus" destination="MjU-wH-5eb" id="aNP-lP-i2i"/>
                 <outlet property="bookDetailYear" destination="ouY-7a-Wiy" id="O6L-6R-PhR"/>
+                <outlet property="btnAddToWishlist" destination="IkV-7A-hOG" id="i4k-ph-1uu"/>
+                <outlet property="btnRent" destination="VS3-jg-qZT" id="NK4-9e-Q8c"/>
             </connections>
             <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
         </view>
