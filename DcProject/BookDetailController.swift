@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Kingfisher
 
 final class BookDetailController: UIViewController {
     
@@ -36,6 +37,22 @@ final class BookDetailController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         confingNavBar()
+        configDetail()
+    }
+    
+    func configDetail() {
+        _view.bookDetailName.text = _viewModel.detailBook.title
+        _view.bookDetailStatus.text = "Available"
+        _view.bookDetailAuthor.text = _viewModel.detailBook.author
+        _view.bookDetailYear.text = _viewModel.detailBook.year
+        _view.bookDetailGenre.text = _viewModel.detailBook.genre
+        if let url = URL(string: _viewModel.detailBook.image) {
+            let resource = ImageResource(downloadURL: url)
+            _view.bookDetailImage.kf.indicatorType = .activity
+            _view.bookDetailImage.kf.setImage(with: resource, options: [.transition(ImageTransition.fade(1))])
+        } else {
+            _view.bookDetailImage.image = #imageLiteral(resourceName: "book")
+        }
     }
     
     func confingNavBar(){
