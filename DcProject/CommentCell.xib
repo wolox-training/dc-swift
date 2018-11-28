@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CommentCell" customModule="DcProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="132"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book" translatesAutoresizingMaskIntoConstraints="NO" id="fCv-nV-hXf">
+                    <rect key="frame" x="22" y="14" width="46" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="9Y6-4a-Tv1"/>
+                        <constraint firstAttribute="width" constant="46" id="Ag9-MS-g3d"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4AD-Tc-ecc">
+                    <rect key="frame" x="87" y="17" width="271" height="18"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Content" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffm-X7-SVV">
+                    <rect key="frame" x="87" y="40" width="271" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fCv-nV-hXf" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="14" id="4Z5-iW-nsw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ffm-X7-SVV" secondAttribute="trailing" constant="17" id="EzL-dZ-qhz"/>
+                <constraint firstItem="4AD-Tc-ecc" firstAttribute="leading" secondItem="fCv-nV-hXf" secondAttribute="trailing" constant="19" id="c1O-8Z-Q11"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4AD-Tc-ecc" secondAttribute="trailing" constant="17" id="d1F-Pl-yqQ"/>
+                <constraint firstItem="ffm-X7-SVV" firstAttribute="leading" secondItem="fCv-nV-hXf" secondAttribute="trailing" constant="19" id="g8d-ZX-R9u"/>
+                <constraint firstItem="4AD-Tc-ecc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="17" id="iXt-1J-Bjl"/>
+                <constraint firstItem="ffm-X7-SVV" firstAttribute="top" secondItem="4AD-Tc-ecc" secondAttribute="bottom" constant="5" id="nwe-BK-K4x"/>
+                <constraint firstItem="fCv-nV-hXf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="22" id="r97-Dl-Oa4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="commentImage" destination="fCv-nV-hXf" id="3iH-ym-ql4"/>
+                <outlet property="commentName" destination="4AD-Tc-ecc" id="aH4-rV-Twr"/>
+                <outlet property="commentText" destination="ffm-X7-SVV" id="7Xb-IC-vBF"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="365.21739130434787"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="book" width="150" height="240"/>
+    </resources>
+</document>
