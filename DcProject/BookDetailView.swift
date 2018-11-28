@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import WolmoCore
+import Kingfisher
 
 final class BookDetailView: UIView, NibLoadable {
     
@@ -24,6 +25,23 @@ final class BookDetailView: UIView, NibLoadable {
     override func awakeFromNib() {
         super.awakeFromNib()
         setUpViews()
+    }
+    
+    func setupBookView(book: Book) {
+        bookDetailName.text = book.title
+        bookDetailStatus.text = "DETAIL-BOOK-STATUS".localized()
+        bookDetailAuthor.text = book.author
+        bookDetailYear.text = book.year
+        bookDetailGenre.text = book.genre
+        btnAddToWishlist.setTitle("DETAIL-BOOK-BTN-ADD-TO-WISHLIST".localized(), for: .normal)
+        btnRent.setTitle("DETAIL-BOOK-BTN-RENT".localized(), for: .normal)
+        if let url = URL(string: book.image) {
+            let resource = ImageResource(downloadURL: url)
+            bookDetailImage.kf.indicatorType = .activity
+            bookDetailImage.kf.setImage(with: resource, options: [.transition(ImageTransition.fade(1))])
+        } else {
+            bookDetailImage.image = #imageLiteral(resourceName: "book")
+        }
     }
 }
 

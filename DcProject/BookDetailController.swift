@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import Kingfisher
 
 final class BookDetailController: UIViewController {
     
@@ -37,27 +36,10 @@ final class BookDetailController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         confingNavBar()
-        configDetail()
+        _view.setupBookView(book: _viewModel.detailBook)
     }
     
-    func configDetail() {
-        _view.bookDetailName.text = _viewModel.detailBook.title
-        _view.bookDetailStatus.text = "DETAIL-BOOK-STATUS".localized()
-        _view.bookDetailAuthor.text = _viewModel.detailBook.author
-        _view.bookDetailYear.text = _viewModel.detailBook.year
-        _view.bookDetailGenre.text = _viewModel.detailBook.genre
-        _view.btnAddToWishlist.setTitle("DETAIL-BOOK-BTN-ADD-TO-WISHLIST".localized(), for: .normal)
-        _view.btnRent.setTitle("DETAIL-BOOK-BTN-RENT".localized(), for: .normal)
-        if let url = URL(string: _viewModel.detailBook.image) {
-            let resource = ImageResource(downloadURL: url)
-            _view.bookDetailImage.kf.indicatorType = .activity
-            _view.bookDetailImage.kf.setImage(with: resource, options: [.transition(ImageTransition.fade(1))])
-        } else {
-            _view.bookDetailImage.image = #imageLiteral(resourceName: "book")
-        }
-    }
-    
-    func confingNavBar(){
+    func confingNavBar() { 
         navigationItem.title = "NAVBAR-TITLE-BOOKDETAIL".localized()
     }
 }
