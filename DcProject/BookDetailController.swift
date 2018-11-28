@@ -36,9 +36,10 @@ final class BookDetailController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         confingNavBar()
+        _view.setupBookView(book: _viewModel.detailBook)
     }
     
-    func confingNavBar(){
+    func confingNavBar() { 
         navigationItem.title = "NAVBAR-TITLE-BOOKDETAIL".localized()
     }
 }

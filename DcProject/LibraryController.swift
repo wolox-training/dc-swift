@@ -44,18 +44,25 @@ final class LibraryController: UIViewController {
     func configTable() {
         _view.tableBooks.register(cell: LibraryCell.self)
         _view.tableBooks.dataSource = self
+        _view.tableBooks.delegate = self
         _view.tableBooks.rowHeight = 90
     }
     
-    func confingNavBar(){
-        let searchButton = UIBarButtonItem(image: UIImage(named: "search"), style: .plain, target: self, action: "press")
-        let notificationButton = UIBarButtonItem(image: UIImage(named: "notification"), style: .plain, target: self, action: "press")
+    func confingNavBar() {
+        let searchButton = UIBarButtonItem(
+            image: UIImage(named: "search"), style: .plain, target: self, action: #selector(press))
+        let notificationButton = UIBarButtonItem(
+            image: UIImage(named: "notification"), style: .plain, target: self, action: #selector(press))
         navigationItem.rightBarButtonItem = searchButton
         navigationItem.leftBarButtonItem = notificationButton
         navigationItem.title = "NAVBAR-TITLE-LIBRARY".localized()
     }
     
-    func requestBooks(){
+    @objc func press (sender: UIBarButtonItem) {
+        NSLog("Press")
+    }
+    
+    func requestBooks() {
         _viewModel.getBooks().startWithResult { result in
             switch result {
             case .success(let books):
@@ -66,6 +73,16 @@ final class LibraryController: UIViewController {
                 NSLog(error.localizedDescription)
             }
         }
+    }
+}
+
+extension LibraryController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let bookDetailView = BookDetailController(viewModel: BookDetailViewModel(
+            book: _viewModel.books.value[indexPath.row]))
+        navigationController?.pushViewController(bookDetailView, animated: true)
     }
     
 }
