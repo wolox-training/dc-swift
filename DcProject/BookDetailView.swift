@@ -21,6 +21,7 @@ final class BookDetailView: UIView, NibLoadable {
     @IBOutlet weak var bookDetailImage: UIImageView!
     @IBOutlet weak var btnAddToWishlist: UIButton!
     @IBOutlet weak var btnRent: UIButton!
+    @IBOutlet weak var contentComment: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
