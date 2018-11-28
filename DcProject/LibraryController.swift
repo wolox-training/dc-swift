@@ -48,11 +48,21 @@ final class LibraryController: UIViewController {
         _view.tableBooks.rowHeight = 90
     }
     
-    func confingNavBar(){
+    func confingNavBar() {
+        let searchButton = UIBarButtonItem(
+            image: UIImage(named: "search"), style: .plain, target: self, action: #selector(press))
+        let notificationButton = UIBarButtonItem(
+            image: UIImage(named: "notification"), style: .plain, target: self, action: #selector(press))
+        navigationItem.rightBarButtonItem = searchButton
+        navigationItem.leftBarButtonItem = notificationButton
         navigationItem.title = "NAVBAR-TITLE-LIBRARY".localized()
     }
     
-    func requestBooks(){
+    @objc func press (sender: UIBarButtonItem) {
+        NSLog("Press")
+    }
+    
+    func requestBooks() {
         _viewModel.getBooks().startWithResult { result in
             switch result {
             case .success(let books):
@@ -64,7 +74,6 @@ final class LibraryController: UIViewController {
             }
         }
     }
-    
 }
 
 extension LibraryController: UITableViewDelegate {
