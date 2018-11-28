@@ -30,7 +30,7 @@ final class BookDetailView: UIView, NibLoadable {
 private extension BookDetailView {
     
     private func setUpViews() {
-        btnAddToWishlist.round(color: UIColor(red: 0, green: 0.68, blue: 0.93, alpha: 1), border: 1.0)
-        btnRent.gradient(border: 0.0)
+        btnAddToWishlist.round(color: UIColor(red: 0, green: 0.68, blue: 0.93, alpha: 1), border: 1.0, radius: 2.0)
+        btnRent.gradient(border: 0.0, radius: 2.0)
     }
 }

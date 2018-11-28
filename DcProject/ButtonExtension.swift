@@ -11,16 +11,16 @@ import UIKit
 extension UIButton {
     
     //Round borders
-    func round(color: UIColor? = nil, border: Double, radius: Double? = 2.0){
+    func round(color: UIColor? = nil, border: Double, radius: Double){
         
-        layer.cornerRadius = bounds.height / CGFloat(radius!)
+        layer.cornerRadius = bounds.height / CGFloat(radius)
         layer.borderWidth = CGFloat(border)
         layer.borderColor = color?.cgColor
         clipsToBounds = true
     }
     
     // Gradient style
-    func gradient(colors: [UIColor]? = nil, border: Double, radius: Double? = 2.0){
+    func gradient(colors: [UIColor]? = nil, border: Double, radius: Double){
         let gradient = CAGradientLayer()
         gradient.frame = CGRect(x: 0, y: 0, width: 275, height: 44)
         gradient.colors = (colors != nil) ? colors : [
