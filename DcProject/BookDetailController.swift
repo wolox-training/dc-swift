@@ -36,9 +36,10 @@ final class BookDetailController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         confingNavBar()
-        load(childViewController: CommentController(viewModel: CommentViewModel()), into: _view.contentComment)
+        load(childViewController: CommentController(viewModel: CommentViewModel(repository: CommentRepository(networkingConfiguration: RepositoryBuilder.DefaultNetworkingConfiguration, sessionManager: SessionManagerService.shared), book: _viewModel.detailBook)), into: _view.contentComment)
         _view.setupBookView(book: _viewModel.detailBook)
     }
+    
     
     func confingNavBar() {
         navigationItem.title = "NAVBAR-TITLE-BOOKDETAIL".localized()
