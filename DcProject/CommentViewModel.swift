@@ -7,17 +7,22 @@
 //
 
 import Foundation
+import Networking
+import ReactiveSwift
 
 final class CommentViewModel {
     
-    //  private let _repository: <#RepositoryDependency#>
+    private let _commentrepository: CommentRepository
+    let bookDetail: Book
+    let comment: MutableProperty<[Comment]> = MutableProperty([])
     
-    //  init(repository: <#RepositoryDependency#>) {
-    //    _repository = repository
-    //  }
-    
-    init(){
-        
+    init(repository: CommentRepository, book: Book) {
+        _commentrepository = repository
+        bookDetail = book
     }
     
+    public func getComment() -> SignalProducer<[Comment], RepositoryError> {
+    
+        return _commentrepository.getComment(bookDetail: bookDetail)
+    }
 }
