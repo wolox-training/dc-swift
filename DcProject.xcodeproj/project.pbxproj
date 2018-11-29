@@ -46,6 +46,7 @@
 		B75A2E2C21A745E200DC67DC /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75A2E2821A745E200DC67DC /* BookDetailView.swift */; };
 		B75A2E2D21A745E200DC67DC /* BookDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75A2E2921A745E200DC67DC /* BookDetailViewModel.swift */; };
 		B75A2E2E21A745E200DC67DC /* BookDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B75A2E2A21A745E200DC67DC /* BookDetailView.xib */; };
+		B75F3C0821B02BD70085C7E3 /* CommentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F3C0721B02BD70085C7E3 /* CommentRepository.swift */; };
 		B789A6B721ADCF0F003727A4 /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B789A6B621ADCF0F003727A4 /* ButtonExtension.swift */; };
 		B7B2F2C7219F076C00082CE3 /* LibraryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7B2F2C6219F076C00082CE3 /* LibraryCell.xib */; };
 		B7B2F2C9219F077800082CE3 /* LibraryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B2F2C8219F077800082CE3 /* LibraryCell.swift */; };
@@ -142,6 +143,7 @@
 		B75A2E2821A745E200DC67DC /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
 		B75A2E2921A745E200DC67DC /* BookDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewModel.swift; sourceTree = "<group>"; };
 		B75A2E2A21A745E200DC67DC /* BookDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookDetailView.xib; sourceTree = "<group>"; };
+		B75F3C0721B02BD70085C7E3 /* CommentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRepository.swift; sourceTree = "<group>"; };
 		B789A6B621ADCF0F003727A4 /* ButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
 		B7B2F2C6219F076C00082CE3 /* LibraryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryCell.xib; sourceTree = "<group>"; };
 		B7B2F2C8219F077800082CE3 /* LibraryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCell.swift; sourceTree = "<group>"; };
@@ -321,6 +323,7 @@
 			isa = PBXGroup;
 			children = (
 				B720D52321A5E4490078A50C /* BookRepository.swift */,
+				B75F3C0721B02BD70085C7E3 /* CommentRepository.swift */,
 			);
 			name = Repository;
 			sourceTree = "<group>";
@@ -596,6 +599,7 @@
 				CEB934DD1D21992100DF75C2 /* Environment.swift in Sources */,
 				B71F6E6A21AF05AB002E2F13 /* CommentView.swift in Sources */,
 				B7B2F2C9219F077800082CE3 /* LibraryCell.swift in Sources */,
+				B75F3C0821B02BD70085C7E3 /* CommentRepository.swift in Sources */,
 				B75A2E2C21A745E200DC67DC /* BookDetailView.swift in Sources */,
 				B75A2E2B21A745E200DC67DC /* BookDetailController.swift in Sources */,
 				B720D53B21A5F9080078A50C /* User.swift in Sources */,
