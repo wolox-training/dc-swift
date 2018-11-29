@@ -15,5 +15,11 @@ import Networking
 public struct Comment {
     
     let content: String
-    
+}
+
+extension Comment: Argo.Decodable {
+    public static func decode(_ json: JSON) -> Decoded<Comment> {
+        return curry(Comment.init)
+        <^> json <| "content"
+    }
 }
