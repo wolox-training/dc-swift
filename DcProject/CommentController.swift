@@ -36,30 +36,48 @@ final class CommentController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bindViewModel()
+        requestComment()
         _view.tableComment.register(cell: CommentCell.self)
         _view.tableComment.dataSource = self
         _view.tableComment.rowHeight = 127
     }
     
+    func requestComment() {
+        _viewModel.getComment().startWithResult { result in
+            switch result {
+            case .success(let comment):
+                NSLog("Request Success")
+                print(comment)
+                self._viewModel.comment.value = comment
+                
+            case .failure(let error):
+                NSLog(error.localizedDescription)
+            }
+        }
+    }
 }
 
 // MARK: - VM binding
 private extension CommentController {
     
     private func bindViewModel() {
+        _viewModel.comment.signal.observeValues { [unowned self]
+            comment in
+            self._view.tableComment.reloadData()
+        }
     }
 }
 
 extension CommentController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return _viewModel.comment.value.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeue(cell: CommentCell.self)
-        cell?.configCell(comment: Comment(content: "It was great to see you again earlier. Let’s definitely get that coffe It was great to see you again earlier.ajdvajdvjsvdvdvdajsvdajdvjhvdhjsvdsahv"))
+        cell?.configCell(comment: _viewModel.comment.value[indexPath.row])
         return cell!
     }
-
+    
 }

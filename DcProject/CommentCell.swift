@@ -18,9 +18,7 @@ public class CommentCell: UITableViewCell, NibLoadable {
     @IBOutlet weak var commentText: UILabel!
     
     func configCell(comment: Comment) {
-        
         commentText.text = comment.content
-        
     }
     
 }
