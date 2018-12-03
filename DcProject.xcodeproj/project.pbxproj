@@ -21,7 +21,15 @@
 		9D1F7A751CBED82900E20BE5 /* Quick.framework in Carthage */ = {isa = PBXBuildFile; fileRef = 9D1F7A701CBED81900E20BE5 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9D6E405A1CB1B93A008CE558 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6E40551CB1B939008CE558 /* ReactiveCocoa.framework */; };
 		9D6E405B1CB1B93A008CE558 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6E40561CB1B93A008CE558 /* Result.framework */; };
+		B7149F2D21B56FF600B5BE39 /* WBooksUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7149F2C21B56FF600B5BE39 /* WBooksUser.swift */; };
 		B71F0C6921A313AC00C7CEE7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B71F0C6821A313AC00C7CEE7 /* Localizable.strings */; };
+		B71F6E6221AF004F002E2F13 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71F6E6121AF004F002E2F13 /* CommentCell.swift */; };
+		B71F6E6421AF0059002E2F13 /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B71F6E6321AF0059002E2F13 /* CommentCell.xib */; };
+		B71F6E6921AF05AB002E2F13 /* CommentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71F6E6521AF05AB002E2F13 /* CommentController.swift */; };
+		B71F6E6A21AF05AB002E2F13 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71F6E6621AF05AB002E2F13 /* CommentView.swift */; };
+		B71F6E6B21AF05AB002E2F13 /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71F6E6721AF05AB002E2F13 /* CommentViewModel.swift */; };
+		B71F6E6C21AF05AB002E2F13 /* CommentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B71F6E6821AF05AB002E2F13 /* CommentView.xib */; };
+		B71F6E6E21AF0B73002E2F13 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71F6E6D21AF0B73002E2F13 /* Comment.swift */; };
 		B720D52421A5E4490078A50C /* BookRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B720D52321A5E4490078A50C /* BookRepository.swift */; };
 		B720D52621A5F4080078A50C /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B720D52521A5F4080078A50C /* Argo.framework */; };
 		B720D52821A5F40D0078A50C /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B720D52721A5F40D0078A50C /* Curry.framework */; };
@@ -39,6 +47,7 @@
 		B75A2E2C21A745E200DC67DC /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75A2E2821A745E200DC67DC /* BookDetailView.swift */; };
 		B75A2E2D21A745E200DC67DC /* BookDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75A2E2921A745E200DC67DC /* BookDetailViewModel.swift */; };
 		B75A2E2E21A745E200DC67DC /* BookDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B75A2E2A21A745E200DC67DC /* BookDetailView.xib */; };
+		B75F3C0821B02BD70085C7E3 /* CommentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F3C0721B02BD70085C7E3 /* CommentRepository.swift */; };
 		B789A6B721ADCF0F003727A4 /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B789A6B621ADCF0F003727A4 /* ButtonExtension.swift */; };
 		B7B2F2C7219F076C00082CE3 /* LibraryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7B2F2C6219F076C00082CE3 /* LibraryCell.xib */; };
 		B7B2F2C9219F077800082CE3 /* LibraryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B2F2C8219F077800082CE3 /* LibraryCell.swift */; };
@@ -110,7 +119,15 @@
 		9D1F7A701CBED81900E20BE5 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		9D6E40551CB1B939008CE558 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		9D6E40561CB1B93A008CE558 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		B7149F2C21B56FF600B5BE39 /* WBooksUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBooksUser.swift; sourceTree = "<group>"; };
 		B71F0C6821A313AC00C7CEE7 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		B71F6E6121AF004F002E2F13 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		B71F6E6321AF0059002E2F13 /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
+		B71F6E6521AF05AB002E2F13 /* CommentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentController.swift; sourceTree = "<group>"; };
+		B71F6E6621AF05AB002E2F13 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		B71F6E6721AF05AB002E2F13 /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
+		B71F6E6821AF05AB002E2F13 /* CommentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentView.xib; sourceTree = "<group>"; };
+		B71F6E6D21AF0B73002E2F13 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		B720D52321A5E4490078A50C /* BookRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRepository.swift; sourceTree = "<group>"; };
 		B720D52521A5F4080078A50C /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/iOS/Argo.framework; sourceTree = "<group>"; };
 		B720D52721A5F40D0078A50C /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = Carthage/Build/iOS/Curry.framework; sourceTree = "<group>"; };
@@ -128,6 +145,7 @@
 		B75A2E2821A745E200DC67DC /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
 		B75A2E2921A745E200DC67DC /* BookDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewModel.swift; sourceTree = "<group>"; };
 		B75A2E2A21A745E200DC67DC /* BookDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookDetailView.xib; sourceTree = "<group>"; };
+		B75F3C0721B02BD70085C7E3 /* CommentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRepository.swift; sourceTree = "<group>"; };
 		B789A6B621ADCF0F003727A4 /* ButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
 		B7B2F2C6219F076C00082CE3 /* LibraryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryCell.xib; sourceTree = "<group>"; };
 		B7B2F2C8219F077800082CE3 /* LibraryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCell.swift; sourceTree = "<group>"; };
@@ -282,10 +300,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B71F6E5F21AF002D002E2F13 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				B71F6E6021AF0033002E2F13 /* CommentCell */,
+				B71F6E6521AF05AB002E2F13 /* CommentController.swift */,
+				B71F6E6621AF05AB002E2F13 /* CommentView.swift */,
+				B71F6E6721AF05AB002E2F13 /* CommentViewModel.swift */,
+				B71F6E6821AF05AB002E2F13 /* CommentView.xib */,
+			);
+			name = Comment;
+			sourceTree = "<group>";
+		};
+		B71F6E6021AF0033002E2F13 /* CommentCell */ = {
+			isa = PBXGroup;
+			children = (
+				B71F6E6121AF004F002E2F13 /* CommentCell.swift */,
+				B71F6E6321AF0059002E2F13 /* CommentCell.xib */,
+			);
+			name = CommentCell;
+			sourceTree = "<group>";
+		};
 		B720D52121A5E3C20078A50C /* Repository */ = {
 			isa = PBXGroup;
 			children = (
 				B720D52321A5E4490078A50C /* BookRepository.swift */,
+				B75F3C0721B02BD70085C7E3 /* CommentRepository.swift */,
 			);
 			name = Repository;
 			sourceTree = "<group>";
@@ -293,6 +333,7 @@
 		B75A2E2621A745B200DC67DC /* BookDetail */ = {
 			isa = PBXGroup;
 			children = (
+				B71F6E5F21AF002D002E2F13 /* Comment */,
 				B75A2E2721A745E200DC67DC /* BookDetailController.swift */,
 				B75A2E2821A745E200DC67DC /* BookDetailView.swift */,
 				B75A2E2921A745E200DC67DC /* BookDetailViewModel.swift */,
@@ -323,6 +364,8 @@
 			children = (
 				B7B2F2CB219F0C3100082CE3 /* Book.swift */,
 				B720D53A21A5F9080078A50C /* User.swift */,
+				B71F6E6D21AF0B73002E2F13 /* Comment.swift */,
+				B7149F2C21B56FF600B5BE39 /* WBooksUser.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -474,9 +517,11 @@
 				B7DD31F8219DFF900080D1B7 /* LibraryView.xib in Resources */,
 				B75A2E2E21A745E200DC67DC /* BookDetailView.xib in Resources */,
 				B7D17F9821A34F3E004664CC /* WishListView.xib in Resources */,
+				B71F6E6421AF0059002E2F13 /* CommentCell.xib in Resources */,
 				B71F0C6921A313AC00C7CEE7 /* Localizable.strings in Resources */,
 				B7B2F2C7219F076C00082CE3 /* LibraryCell.xib in Resources */,
 				9D15750F1CB1B27500EA395E /* LaunchScreen.storyboard in Resources */,
+				B71F6E6C21AF05AB002E2F13 /* CommentView.xib in Resources */,
 				9D15750C1CB1B27500EA395E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -550,13 +595,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B71F6E6B21AF05AB002E2F13 /* CommentViewModel.swift in Sources */,
 				B7B2F2CC219F0C3100082CE3 /* Book.swift in Sources */,
+				B71F6E6921AF05AB002E2F13 /* CommentController.swift in Sources */,
 				B720D53721A5F74E0078A50C /* RepositoryBuilder.swift in Sources */,
 				CEB934DD1D21992100DF75C2 /* Environment.swift in Sources */,
+				B71F6E6A21AF05AB002E2F13 /* CommentView.swift in Sources */,
 				B7B2F2C9219F077800082CE3 /* LibraryCell.swift in Sources */,
+				B75F3C0821B02BD70085C7E3 /* CommentRepository.swift in Sources */,
 				B75A2E2C21A745E200DC67DC /* BookDetailView.swift in Sources */,
 				B75A2E2B21A745E200DC67DC /* BookDetailController.swift in Sources */,
 				B720D53B21A5F9080078A50C /* User.swift in Sources */,
+				B71F6E6E21AF0B73002E2F13 /* Comment.swift in Sources */,
+				B7149F2D21B56FF600B5BE39 /* WBooksUser.swift in Sources */,
 				B7D17F8F21A324CB004664CC /* TabBarController.swift in Sources */,
 				B7D17F9521A34F3E004664CC /* WishListController.swift in Sources */,
 				E1530D9C1ED37905002A9002 /* RollbarService.swift in Sources */,
@@ -570,6 +621,7 @@
 				B789A6B721ADCF0F003727A4 /* ButtonExtension.swift in Sources */,
 				B7DD31F7219DFF900080D1B7 /* LibraryViewModel.swift in Sources */,
 				B7DD31F5219DFF900080D1B7 /* LibraryController.swift in Sources */,
+				B71F6E6221AF004F002E2F13 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
