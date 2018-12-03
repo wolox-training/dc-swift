@@ -22,6 +22,7 @@
 		9D6E405A1CB1B93A008CE558 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6E40551CB1B939008CE558 /* ReactiveCocoa.framework */; };
 		9D6E405B1CB1B93A008CE558 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6E40561CB1B93A008CE558 /* Result.framework */; };
 		B7149F2D21B56FF600B5BE39 /* WBooksUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7149F2C21B56FF600B5BE39 /* WBooksUser.swift */; };
+		B7149F3521B5CFD500B5BE39 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7149F3421B5CFD500B5BE39 /* ImageExtension.swift */; };
 		B71F0C6921A313AC00C7CEE7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B71F0C6821A313AC00C7CEE7 /* Localizable.strings */; };
 		B71F6E6221AF004F002E2F13 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71F6E6121AF004F002E2F13 /* CommentCell.swift */; };
 		B71F6E6421AF0059002E2F13 /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B71F6E6321AF0059002E2F13 /* CommentCell.xib */; };
@@ -120,6 +121,7 @@
 		9D6E40551CB1B939008CE558 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		9D6E40561CB1B93A008CE558 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		B7149F2C21B56FF600B5BE39 /* WBooksUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBooksUser.swift; sourceTree = "<group>"; };
+		B7149F3421B5CFD500B5BE39 /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
 		B71F0C6821A313AC00C7CEE7 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		B71F6E6121AF004F002E2F13 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		B71F6E6321AF0059002E2F13 /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
@@ -346,6 +348,7 @@
 			isa = PBXGroup;
 			children = (
 				B789A6B621ADCF0F003727A4 /* ButtonExtension.swift */,
+				B7149F3421B5CFD500B5BE39 /* ImageExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -598,6 +601,7 @@
 				B71F6E6B21AF05AB002E2F13 /* CommentViewModel.swift in Sources */,
 				B7B2F2CC219F0C3100082CE3 /* Book.swift in Sources */,
 				B71F6E6921AF05AB002E2F13 /* CommentController.swift in Sources */,
+				B7149F3521B5CFD500B5BE39 /* ImageExtension.swift in Sources */,
 				B720D53721A5F74E0078A50C /* RepositoryBuilder.swift in Sources */,
 				CEB934DD1D21992100DF75C2 /* Environment.swift in Sources */,
 				B71F6E6A21AF05AB002E2F13 /* CommentView.swift in Sources */,
