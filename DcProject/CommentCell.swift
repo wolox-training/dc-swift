@@ -19,6 +19,8 @@ public class CommentCell: UITableViewCell, NibLoadable {
     
     func configCell(comment: Comment) {
         commentText.text = comment.content
+        commentName.text = comment.user.username
+        commentImage.image = #imageLiteral(resourceName: "user")
     }
     
 }
