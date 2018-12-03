@@ -12,15 +12,17 @@ import Runes
 import Curry
 import Networking
 
-public struct UserComment {
+public struct WBooksUser {
     
     let username: String
+    let id: Int
     
 }
 
-extension UserComment: Argo.Decodable {
-    public static func decode(_ json: JSON) -> Decoded<UserComment> {
-        return curry(UserComment.init)
+extension WBooksUser: Argo.Decodable {
+    public static func decode(_ json: JSON) -> Decoded<WBooksUser> {
+        return curry(WBooksUser.init)
             <^> json <| "username"
+            <*> json <| "id"
     }
 }
