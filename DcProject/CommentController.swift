@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import WolmoCore
 import UIKit
 
 final class CommentController: UIViewController {
@@ -50,7 +51,8 @@ final class CommentController: UIViewController {
                 self._viewModel.comment.value = comment
                 
             case .failure(let error):
-                NSLog(error.localizedDescription)
+                self.presentAlert(ErrorAlertViewModel(title: "ERROR-FETCHING-COMMENTS".localized(),
+                                                      message: error.localizedDescription))
             }
         }
     }
@@ -60,8 +62,7 @@ final class CommentController: UIViewController {
 private extension CommentController {
     
     private func bindViewModel() {
-        _viewModel.comment.signal.observeValues { [unowned self]
-            comment in
+        _viewModel.comment.signal.observeValues { [unowned self] _ in
             self._view.tableComment.reloadData()
         }
     }
@@ -76,7 +77,7 @@ extension CommentController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeue(cell: CommentCell.self)
         cell?.configCell(comment: _viewModel.comment.value[indexPath.row])
-
+        
         return cell!
     }
     
