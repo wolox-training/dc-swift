@@ -15,9 +15,9 @@ import WolmoReactiveCore
 
 public class CommentRepository: AbstractRepository  {
     
-    public func getComment(bookDetail: Book) -> SignalProducer<[Comment], RepositoryError> {
+    public func getComment(idBook: Int) -> SignalProducer<[Comment], RepositoryError> {
         
-        return performRequest(method: .get, path: CommentRepository.BookPath + String(bookDetail.id) + CommentRepository.CommentsPath ) { response in
+        return performRequest(method: .get, path: CommentRepository.BookPath + String(idBook) + CommentRepository.CommentsPath ) { response in
             return decode(response).toResult()
         }
     }

@@ -23,6 +23,6 @@ final class CommentViewModel {
     
     public func getComment() -> SignalProducer<[Comment], RepositoryError> {
     
-        return _commentrepository.getComment(bookDetail: bookDetail)
+        return _commentrepository.getComment(idBook: bookDetail.id)
     }
 }

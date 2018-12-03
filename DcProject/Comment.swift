@@ -15,7 +15,7 @@ import Networking
 public struct Comment {
     
     let content: String
-    let user: UserComment
+    let user: WBooksUser
 }
 
 extension Comment: Argo.Decodable {
