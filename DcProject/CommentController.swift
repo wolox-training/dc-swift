@@ -47,7 +47,6 @@ final class CommentController: UIViewController {
             switch result {
             case .success(let comment):
                 NSLog("Request Success")
-                print(comment)
                 self._viewModel.comment.value = comment
                 
             case .failure(let error):
@@ -77,6 +76,7 @@ extension CommentController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeue(cell: CommentCell.self)
         cell?.configCell(comment: _viewModel.comment.value[indexPath.row])
+
         return cell!
     }
     
