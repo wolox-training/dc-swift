@@ -15,15 +15,6 @@ final class CommentView: UIView, NibLoadable {
     @IBOutlet weak var tableComment: UITableView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        setUpViews()
-    }
-    
-}
-
-private extension CommentView {
-    
-    private func setUpViews() {
-        
     }
     
 }
