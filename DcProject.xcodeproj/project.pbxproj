@@ -21,7 +21,7 @@
 		9D1F7A751CBED82900E20BE5 /* Quick.framework in Carthage */ = {isa = PBXBuildFile; fileRef = 9D1F7A701CBED81900E20BE5 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9D6E405A1CB1B93A008CE558 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6E40551CB1B939008CE558 /* ReactiveCocoa.framework */; };
 		9D6E405B1CB1B93A008CE558 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6E40561CB1B93A008CE558 /* Result.framework */; };
-		B7149F2D21B56FF600B5BE39 /* UserComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7149F2C21B56FF600B5BE39 /* UserComment.swift */; };
+		B7149F2D21B56FF600B5BE39 /* WBooksUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7149F2C21B56FF600B5BE39 /* WBooksUser.swift */; };
 		B71F0C6921A313AC00C7CEE7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B71F0C6821A313AC00C7CEE7 /* Localizable.strings */; };
 		B71F6E6221AF004F002E2F13 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71F6E6121AF004F002E2F13 /* CommentCell.swift */; };
 		B71F6E6421AF0059002E2F13 /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B71F6E6321AF0059002E2F13 /* CommentCell.xib */; };
@@ -119,7 +119,7 @@
 		9D1F7A701CBED81900E20BE5 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		9D6E40551CB1B939008CE558 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		9D6E40561CB1B93A008CE558 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
-		B7149F2C21B56FF600B5BE39 /* UserComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserComment.swift; sourceTree = "<group>"; };
+		B7149F2C21B56FF600B5BE39 /* WBooksUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBooksUser.swift; sourceTree = "<group>"; };
 		B71F0C6821A313AC00C7CEE7 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		B71F6E6121AF004F002E2F13 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		B71F6E6321AF0059002E2F13 /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
@@ -365,7 +365,7 @@
 				B7B2F2CB219F0C3100082CE3 /* Book.swift */,
 				B720D53A21A5F9080078A50C /* User.swift */,
 				B71F6E6D21AF0B73002E2F13 /* Comment.swift */,
-				B7149F2C21B56FF600B5BE39 /* UserComment.swift */,
+				B7149F2C21B56FF600B5BE39 /* WBooksUser.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -607,7 +607,7 @@
 				B75A2E2B21A745E200DC67DC /* BookDetailController.swift in Sources */,
 				B720D53B21A5F9080078A50C /* User.swift in Sources */,
 				B71F6E6E21AF0B73002E2F13 /* Comment.swift in Sources */,
-				B7149F2D21B56FF600B5BE39 /* UserComment.swift in Sources */,
+				B7149F2D21B56FF600B5BE39 /* WBooksUser.swift in Sources */,
 				B7D17F8F21A324CB004664CC /* TabBarController.swift in Sources */,
 				B7D17F9521A34F3E004664CC /* WishListController.swift in Sources */,
 				E1530D9C1ED37905002A9002 /* RollbarService.swift in Sources */,
