@@ -10,7 +10,7 @@ import UIKit
 
 extension UIImageView {
  
-    func round(colorBorder: UIColor? = nil, colorBackground: UIColor? = nil, border: Double, radius: Double){
+    func round(colorBorder: UIColor? = nil, colorBackground: UIColor? = nil, border: Double = 1.0, radius: Double){
         
         layer.cornerRadius = frame.size.width / CGFloat(radius)
         layer.masksToBounds = true
