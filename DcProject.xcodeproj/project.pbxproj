@@ -43,6 +43,10 @@
 		B720D53721A5F74E0078A50C /* RepositoryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B720D53621A5F74E0078A50C /* RepositoryBuilder.swift */; };
 		B720D53921A5F8400078A50C /* SessionManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B720D53821A5F8400078A50C /* SessionManagerService.swift */; };
 		B720D53B21A5F9080078A50C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B720D53A21A5F9080078A50C /* User.swift */; };
+		B757180621B174A900A7E3D6 /* NewBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B757180221B174A900A7E3D6 /* NewBookController.swift */; };
+		B757180721B174A900A7E3D6 /* NewBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B757180321B174A900A7E3D6 /* NewBookView.swift */; };
+		B757180821B174A900A7E3D6 /* NewBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B757180421B174A900A7E3D6 /* NewBookViewModel.swift */; };
+		B757180921B174A900A7E3D6 /* NewBookView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B757180521B174A900A7E3D6 /* NewBookView.xib */; };
 		B75A2E2521A7391600DC67DC /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75A2E2421A7391600DC67DC /* Kingfisher.framework */; };
 		B75A2E2B21A745E200DC67DC /* BookDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75A2E2721A745E200DC67DC /* BookDetailController.swift */; };
 		B75A2E2C21A745E200DC67DC /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75A2E2821A745E200DC67DC /* BookDetailView.swift */; };
@@ -142,6 +146,10 @@
 		B720D53621A5F74E0078A50C /* RepositoryBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryBuilder.swift; sourceTree = "<group>"; };
 		B720D53821A5F8400078A50C /* SessionManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManagerService.swift; sourceTree = "<group>"; };
 		B720D53A21A5F9080078A50C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B757180221B174A900A7E3D6 /* NewBookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBookController.swift; sourceTree = "<group>"; };
+		B757180321B174A900A7E3D6 /* NewBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBookView.swift; sourceTree = "<group>"; };
+		B757180421B174A900A7E3D6 /* NewBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBookViewModel.swift; sourceTree = "<group>"; };
+		B757180521B174A900A7E3D6 /* NewBookView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewBookView.xib; sourceTree = "<group>"; };
 		B75A2E2421A7391600DC67DC /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		B75A2E2721A745E200DC67DC /* BookDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailController.swift; sourceTree = "<group>"; };
 		B75A2E2821A745E200DC67DC /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
@@ -238,6 +246,7 @@
 		9D1575031CB1B27500EA395E /* DcProject */ = {
 			isa = PBXGroup;
 			children = (
+				B757180121B1747F00A7E3D6 /* NewBook */,
 				B789A6B821ADE369003727A4 /* Extensions */,
 				B75A2E2621A745B200DC67DC /* BookDetail */,
 				B720D52121A5E3C20078A50C /* Repository */,
@@ -330,6 +339,17 @@
 				B75F3C0721B02BD70085C7E3 /* CommentRepository.swift */,
 			);
 			name = Repository;
+			sourceTree = "<group>";
+		};
+		B757180121B1747F00A7E3D6 /* NewBook */ = {
+			isa = PBXGroup;
+			children = (
+				B757180221B174A900A7E3D6 /* NewBookController.swift */,
+				B757180321B174A900A7E3D6 /* NewBookView.swift */,
+				B757180421B174A900A7E3D6 /* NewBookViewModel.swift */,
+				B757180521B174A900A7E3D6 /* NewBookView.xib */,
+			);
+			name = NewBook;
 			sourceTree = "<group>";
 		};
 		B75A2E2621A745B200DC67DC /* BookDetail */ = {
@@ -517,6 +537,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B757180921B174A900A7E3D6 /* NewBookView.xib in Resources */,
 				B7DD31F8219DFF900080D1B7 /* LibraryView.xib in Resources */,
 				B75A2E2E21A745E200DC67DC /* BookDetailView.xib in Resources */,
 				B7D17F9821A34F3E004664CC /* WishListView.xib in Resources */,
@@ -602,6 +623,9 @@
 				B7B2F2CC219F0C3100082CE3 /* Book.swift in Sources */,
 				B71F6E6921AF05AB002E2F13 /* CommentController.swift in Sources */,
 				B7149F3521B5CFD500B5BE39 /* ImageExtension.swift in Sources */,
+				B757180621B174A900A7E3D6 /* NewBookController.swift in Sources */,
+				B757180821B174A900A7E3D6 /* NewBookViewModel.swift in Sources */,
+				B757180721B174A900A7E3D6 /* NewBookView.swift in Sources */,
 				B720D53721A5F74E0078A50C /* RepositoryBuilder.swift in Sources */,
 				CEB934DD1D21992100DF75C2 /* Environment.swift in Sources */,
 				B71F6E6A21AF05AB002E2F13 /* CommentView.swift in Sources */,
