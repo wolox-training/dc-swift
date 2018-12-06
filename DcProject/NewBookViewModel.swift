@@ -7,15 +7,22 @@
 //
 
 import Foundation
+import Alamofire
 
 final class NewBookViewModel {
     
-    //  private let _repository: <#RepositoryDependency#>
+    private let _booksRepository: BookRepository
+    var newBook: Book?
     
-    //  init(repository: <#RepositoryDependency#>) {
-    //    _repository = repository
-    //  }
-    init() {
+    init(repository: BookRepository) {
+        
+        _booksRepository = repository
+        
+    }
+    
+    public func postBook() -> DataRequest {
+        
+        return _booksRepository.postBook(book: newBook!)
         
     }
     
