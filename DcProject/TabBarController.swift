@@ -37,6 +37,15 @@ final class TabBarController: UITabBarController, UITabBarControllerDelegate, UI
             image: UIImage(named: "wishlist"),
             selectedImage: UIImage(named: "wishlist"))
         
-        viewControllers = [navLibraryController, navWishListController]
+        let newBookController = NewBookController(viewModel: NewBookViewModel(repository: BookRepository(
+            networkingConfiguration: RepositoryBuilder.DefaultNetworkingConfiguration,
+            sessionManager: SessionManagerService.shared)))
+        let navNewBook = UINavigationController(rootViewController: newBookController)
+        newBookController.tabBarItem = UITabBarItem(
+            title: "TABBAR-ADDNEW".localized(),
+            image: UIImage(named: "newBook"),
+            selectedImage: UIImage(named: "newBook"))
+        
+        viewControllers = [navLibraryController, navWishListController, navNewBook]
     }
 }

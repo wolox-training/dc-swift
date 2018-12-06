@@ -12,10 +12,10 @@ import ReactiveSwift
 import Argo
 import Result
 import WolmoReactiveCore
+import WolmoCore
+import Alamofire
 
-public class BookRepository: AbstractRepository  {
-    
-    
+public class BookRepository: AbstractRepository {
     
     public func getBooks() -> SignalProducer<[Book], RepositoryError> {
         
@@ -23,9 +23,18 @@ public class BookRepository: AbstractRepository  {
             return decode(response).toResult()
         }
     }
+    
+    public func postBook(book: Book) -> DataRequest {
+        
+        let parameters = book.toDictionary()
+        let url = URL(string: BookRepository.CreationBookUrl)!
+        
+        return request(url, method: .post, parameters: parameters)
+    }
 }
 
-//    MARK: Paths
+// MARK: Paths
 private extension BookRepository {
     static let BooksPath: String = "/books"
+    static let CreationBookUrl: String = "https://private-anon-77412cebfa-wbooksbackend.apiary-mock.com/books"
 }

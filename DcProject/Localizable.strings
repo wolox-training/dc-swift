@@ -20,3 +20,7 @@
 
 /*ERRORS*/
 "ERROR-FETCHING-COMMENTS" = "Error fetching comments";
+
+/*ALERTS*/
+"CREATION-BOOK-SUCCESSFUL" = "Creation Successful";
+"BUTTON-ALERT-OK" = "Ok";
