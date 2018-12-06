@@ -133,6 +133,7 @@
                 <outlet property="newBookTopic" destination="tQs-19-zc5" id="3mt-6F-vMq"/>
                 <outlet property="newBookYear" destination="XO3-m3-WA9" id="BsA-yt-wjt"/>
             </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="152.47376311844079"/>
         </view>
     </objects>
     <resources>
