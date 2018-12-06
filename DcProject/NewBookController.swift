@@ -52,23 +52,23 @@ final class NewBookController: UIViewController, UINavigationControllerDelegate,
     
     func configButton() {
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tap))
-        tapGesture.numberOfTapsRequired = 1
-        _view.btnSubmit.addGestureRecognizer(tapGesture)
+        let tapBtnSubmit = UITapGestureRecognizer(target: self, action: #selector(submitTapped))
+        tapBtnSubmit.numberOfTapsRequired = 1
+        _view.btnSubmit.addGestureRecognizer(tapBtnSubmit)
         
-        let tapImage = UITapGestureRecognizer(target: self, action: #selector(setImage))
-        tapImage.numberOfTapsRequired = 1
-        _view.btnAddImage.addGestureRecognizer(tapImage)
+        let tapBtnImage = UITapGestureRecognizer(target: self, action: #selector(setImage))
+        tapBtnImage.numberOfTapsRequired = 1
+        _view.btnAddImage.addGestureRecognizer(tapBtnImage)
     }
     
     @objc func setImage(sender: UITapGestureRecognizer) {
         
-        let imag = UIImagePickerController()
-        imag.delegate = self
-        imag.sourceType = .photoLibrary
-        imag.allowsEditing = true
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.allowsEditing = true
         
-        present(imag, animated: true)
+        present(imagePicker, animated: true)
         
     }
     
@@ -81,7 +81,7 @@ final class NewBookController: UIViewController, UINavigationControllerDelegate,
         picker.dismiss(animated: true)
     }
     
-    @objc func tap(sender: UITapGestureRecognizer) {
+    @objc func submitTapped(sender: UITapGestureRecognizer) {
         
         let book = Book.init(
             title: _view.newBookName.text!,
