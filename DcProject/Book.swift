@@ -21,7 +21,6 @@ public struct Book {
     let year: String
     let genre: String
     
-    
 }
 
 extension Book: Argo.Decodable {
@@ -33,5 +32,14 @@ extension Book: Argo.Decodable {
             <*> json <| "id"
             <*> json <| "year"
             <*> json <| "genre"
+    }
+}
+
+extension Book {
+    
+    func toDictionary() -> [String: Any] {
+        
+        return ["title": title, "author": author, "image": image, "id": id, "year": year, "genre": genre]
+        
     }
 }
