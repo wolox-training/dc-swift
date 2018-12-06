@@ -12,7 +12,6 @@ import WolmoCore
 
 final class NewBookView: UIView, NibLoadable {
     
-    
     @IBOutlet weak var btnAddImage: UIButton!
     @IBOutlet weak var newBookName: FormTextInput!
     @IBOutlet weak var newBookAuthor: FormTextInput!
@@ -35,7 +34,6 @@ private extension NewBookView {
         btnSubmit.gradient(border: 0.0, radius: 2.0)
         
     }
-    
 }
 
 public class FormTextInput: UITextField {
@@ -45,7 +43,7 @@ public class FormTextInput: UITextField {
         self.borderStyle = .none
         self.layer.backgroundColor = UIColor.white.cgColor
         self.layer.masksToBounds = false
-        self.layer.shadowColor = UIColor(red:0.78, green:0.78, blue:0.8, alpha:1).cgColor
+        self.layer.shadowColor = UIColor(red: 0.78, green: 0.78, blue: 0.8, alpha: 1).cgColor
         self.layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
         self.layer.shadowOpacity = 1.0
         self.layer.shadowRadius = 0.0
