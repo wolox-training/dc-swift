@@ -39,7 +39,14 @@ extension Book {
     
     func toDictionary() -> [String: Any] {
         
-        return ["title": title, "author": author, "image": image, "id": id, "year": year, "genre": genre]
+        return [
+            "title": title,
+            "author": author,
+            "image": image,
+            "id": id,
+            "year": year,
+            "genre": genre
+        ]
         
     }
 }
