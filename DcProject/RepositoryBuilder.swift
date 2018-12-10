@@ -12,7 +12,7 @@ import Networking
 class RepositoryBuilder {
     static var DefaultNetworkingConfiguration: NetworkingConfiguration {
         var config = NetworkingConfiguration()
-        config.domainURL = "private-anon-74f9c64716-wbooksbackend.apiary-mock.com"
+        config.domainURL = "private-anon-915851985e-wbooksbackend.apiary-mock.com"
         config.useSecureConnection = true
         config.usePinningCertificate = false
         return config
