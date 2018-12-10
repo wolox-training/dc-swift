@@ -37,7 +37,6 @@ final class RentalsController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        bindViewModel()
         requestRentals()
         configTable()
         
@@ -55,8 +54,8 @@ final class RentalsController: UIViewController {
     func requestRentals() {
         _viewModel.getRentals().responseJSON {[unowned self] response in
             
-            var str: Decoded<[Rental]> = decode(response.result.value)
-            self._viewModel.rentals = str.value!
+            var result: Decoded<[Rental]> = decode(response.result.value)
+            self._viewModel.rentals = result.value!
             self._view.tableRental.reloadData()
             
         }
@@ -64,32 +63,16 @@ final class RentalsController: UIViewController {
     
 }
 
-// MARK: - VM binding
-private extension RentalsController {
-    
-    private func bindViewModel() {
-        
-    }
-    
-}
-
 extension RentalsController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return _viewModel.rentals.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+       
         let cell = tableView.dequeue(cell: LibraryCell.self)
-        
-        var book = Book(title: "Title",
-                        author: "Author",
-                        image: "https://read.macmillan.com/wp-content/uploads/2016/04/book-cover-placeholder.png",
-                        id: 1,
-                        year: "1222",
-                        genre: "terror" )
-        
-        cell?.confingCell(book: _viewModel.rentals?[0].book ?? book)
+        cell?.confingCell(book: _viewModel.rentals[indexPath.row].book)
         
         return cell!
     }
