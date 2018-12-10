@@ -27,20 +27,28 @@
                     <rect key="frame" x="20" y="119" width="335" height="389"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y68-4d-Pfb">
+                    <rect key="frame" x="51" y="521" width="273" height="123"/>
+                </view>
             </subviews>
             <color key="backgroundColor" red="0.92549019610000005" green="0.96470588239999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <color key="tintColor" red="0.92549019610000005" green="0.96470588239999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="UgO-Gi-Omy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3fI-gy-sdB"/>
                 <constraint firstItem="9ET-F1-Lq6" firstAttribute="top" secondItem="UgO-Gi-Omy" secondAttribute="bottom" constant="17" id="LTc-HK-CG3"/>
+                <constraint firstItem="Y68-4d-Pfb" firstAttribute="top" secondItem="9ET-F1-Lq6" secondAttribute="bottom" constant="13" id="QZa-2X-FGZ"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="9ET-F1-Lq6" secondAttribute="bottom" constant="159" id="TmN-90-CD5"/>
                 <constraint firstItem="9ET-F1-Lq6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Yhy-1I-cfS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Y68-4d-Pfb" secondAttribute="bottom" constant="23" id="bti-5F-lhG"/>
+                <constraint firstItem="Y68-4d-Pfb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="51" id="dib-Jk-THX"/>
                 <constraint firstItem="UgO-Gi-Omy" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="l2Y-ay-11M"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9ET-F1-Lq6" secondAttribute="trailing" constant="20" id="qj6-ap-TQm"/>
                 <constraint firstItem="UgO-Gi-Omy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="sWf-zA-VzA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Y68-4d-Pfb" secondAttribute="trailing" constant="51" id="tYy-Al-W9x"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="contentSuggestion" destination="Y68-4d-Pfb" id="Pf9-BP-DvS"/>
                 <outlet property="tableRental" destination="9ET-F1-Lq6" id="vVj-Ql-GTv"/>
             </connections>
         </view>
