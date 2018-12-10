@@ -43,6 +43,10 @@
 		B720D53721A5F74E0078A50C /* RepositoryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B720D53621A5F74E0078A50C /* RepositoryBuilder.swift */; };
 		B720D53921A5F8400078A50C /* SessionManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B720D53821A5F8400078A50C /* SessionManagerService.swift */; };
 		B720D53B21A5F9080078A50C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B720D53A21A5F9080078A50C /* User.swift */; };
+		B723678B21B9D14E00242FE8 /* RentalsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B723678721B9D14E00242FE8 /* RentalsController.swift */; };
+		B723678C21B9D14E00242FE8 /* RentalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B723678821B9D14E00242FE8 /* RentalsView.swift */; };
+		B723678D21B9D14E00242FE8 /* RentalsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B723678921B9D14E00242FE8 /* RentalsViewModel.swift */; };
+		B723678E21B9D14E00242FE8 /* RentalsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B723678A21B9D14E00242FE8 /* RentalsView.xib */; };
 		B757180621B174A900A7E3D6 /* NewBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B757180221B174A900A7E3D6 /* NewBookController.swift */; };
 		B757180721B174A900A7E3D6 /* NewBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B757180321B174A900A7E3D6 /* NewBookView.swift */; };
 		B757180821B174A900A7E3D6 /* NewBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B757180421B174A900A7E3D6 /* NewBookViewModel.swift */; };
@@ -53,6 +57,8 @@
 		B75A2E2D21A745E200DC67DC /* BookDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75A2E2921A745E200DC67DC /* BookDetailViewModel.swift */; };
 		B75A2E2E21A745E200DC67DC /* BookDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B75A2E2A21A745E200DC67DC /* BookDetailView.xib */; };
 		B75F3C0821B02BD70085C7E3 /* CommentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F3C0721B02BD70085C7E3 /* CommentRepository.swift */; };
+		B77A2E2F21BACB0A00F440E4 /* RentalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77A2E2E21BACB0A00F440E4 /* RentalRepository.swift */; };
+		B77A2E3121BAD15C00F440E4 /* Rental.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77A2E3021BAD15C00F440E4 /* Rental.swift */; };
 		B789A6B721ADCF0F003727A4 /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B789A6B621ADCF0F003727A4 /* ButtonExtension.swift */; };
 		B7B2F2C7219F076C00082CE3 /* LibraryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7B2F2C6219F076C00082CE3 /* LibraryCell.xib */; };
 		B7B2F2C9219F077800082CE3 /* LibraryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B2F2C8219F077800082CE3 /* LibraryCell.swift */; };
@@ -146,6 +152,10 @@
 		B720D53621A5F74E0078A50C /* RepositoryBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryBuilder.swift; sourceTree = "<group>"; };
 		B720D53821A5F8400078A50C /* SessionManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManagerService.swift; sourceTree = "<group>"; };
 		B720D53A21A5F9080078A50C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B723678721B9D14E00242FE8 /* RentalsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalsController.swift; sourceTree = "<group>"; };
+		B723678821B9D14E00242FE8 /* RentalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalsView.swift; sourceTree = "<group>"; };
+		B723678921B9D14E00242FE8 /* RentalsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalsViewModel.swift; sourceTree = "<group>"; };
+		B723678A21B9D14E00242FE8 /* RentalsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RentalsView.xib; sourceTree = "<group>"; };
 		B757180221B174A900A7E3D6 /* NewBookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBookController.swift; sourceTree = "<group>"; };
 		B757180321B174A900A7E3D6 /* NewBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBookView.swift; sourceTree = "<group>"; };
 		B757180421B174A900A7E3D6 /* NewBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBookViewModel.swift; sourceTree = "<group>"; };
@@ -156,6 +166,8 @@
 		B75A2E2921A745E200DC67DC /* BookDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewModel.swift; sourceTree = "<group>"; };
 		B75A2E2A21A745E200DC67DC /* BookDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookDetailView.xib; sourceTree = "<group>"; };
 		B75F3C0721B02BD70085C7E3 /* CommentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRepository.swift; sourceTree = "<group>"; };
+		B77A2E2E21BACB0A00F440E4 /* RentalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalRepository.swift; sourceTree = "<group>"; };
+		B77A2E3021BAD15C00F440E4 /* Rental.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rental.swift; sourceTree = "<group>"; };
 		B789A6B621ADCF0F003727A4 /* ButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
 		B7B2F2C6219F076C00082CE3 /* LibraryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryCell.xib; sourceTree = "<group>"; };
 		B7B2F2C8219F077800082CE3 /* LibraryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCell.swift; sourceTree = "<group>"; };
@@ -246,6 +258,7 @@
 		9D1575031CB1B27500EA395E /* DcProject */ = {
 			isa = PBXGroup;
 			children = (
+				B723678621B9D13400242FE8 /* Rentals */,
 				B757180121B1747F00A7E3D6 /* NewBook */,
 				B789A6B821ADE369003727A4 /* Extensions */,
 				B75A2E2621A745B200DC67DC /* BookDetail */,
@@ -337,8 +350,20 @@
 			children = (
 				B720D52321A5E4490078A50C /* BookRepository.swift */,
 				B75F3C0721B02BD70085C7E3 /* CommentRepository.swift */,
+				B77A2E2E21BACB0A00F440E4 /* RentalRepository.swift */,
 			);
 			name = Repository;
+			sourceTree = "<group>";
+		};
+		B723678621B9D13400242FE8 /* Rentals */ = {
+			isa = PBXGroup;
+			children = (
+				B723678721B9D14E00242FE8 /* RentalsController.swift */,
+				B723678821B9D14E00242FE8 /* RentalsView.swift */,
+				B723678921B9D14E00242FE8 /* RentalsViewModel.swift */,
+				B723678A21B9D14E00242FE8 /* RentalsView.xib */,
+			);
+			name = Rentals;
 			sourceTree = "<group>";
 		};
 		B757180121B1747F00A7E3D6 /* NewBook */ = {
@@ -389,6 +414,7 @@
 				B720D53A21A5F9080078A50C /* User.swift */,
 				B71F6E6D21AF0B73002E2F13 /* Comment.swift */,
 				B7149F2C21B56FF600B5BE39 /* WBooksUser.swift */,
+				B77A2E3021BAD15C00F440E4 /* Rental.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -546,6 +572,7 @@
 				B7B2F2C7219F076C00082CE3 /* LibraryCell.xib in Resources */,
 				9D15750F1CB1B27500EA395E /* LaunchScreen.storyboard in Resources */,
 				B71F6E6C21AF05AB002E2F13 /* CommentView.xib in Resources */,
+				B723678E21B9D14E00242FE8 /* RentalsView.xib in Resources */,
 				9D15750C1CB1B27500EA395E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -634,6 +661,7 @@
 				B75A2E2C21A745E200DC67DC /* BookDetailView.swift in Sources */,
 				B75A2E2B21A745E200DC67DC /* BookDetailController.swift in Sources */,
 				B720D53B21A5F9080078A50C /* User.swift in Sources */,
+				B723678B21B9D14E00242FE8 /* RentalsController.swift in Sources */,
 				B71F6E6E21AF0B73002E2F13 /* Comment.swift in Sources */,
 				B7149F2D21B56FF600B5BE39 /* WBooksUser.swift in Sources */,
 				B7D17F8F21A324CB004664CC /* TabBarController.swift in Sources */,
@@ -642,8 +670,12 @@
 				B75A2E2D21A745E200DC67DC /* BookDetailViewModel.swift in Sources */,
 				9D1575051CB1B27500EA395E /* AppDelegate.swift in Sources */,
 				B720D52421A5E4490078A50C /* BookRepository.swift in Sources */,
+				B77A2E2F21BACB0A00F440E4 /* RentalRepository.swift in Sources */,
+				B723678D21B9D14E00242FE8 /* RentalsViewModel.swift in Sources */,
+				B723678C21B9D14E00242FE8 /* RentalsView.swift in Sources */,
 				B720D53921A5F8400078A50C /* SessionManagerService.swift in Sources */,
 				B7D17F9621A34F3E004664CC /* WishListView.swift in Sources */,
+				B77A2E3121BAD15C00F440E4 /* Rental.swift in Sources */,
 				B7DD31F6219DFF900080D1B7 /* LibraryView.swift in Sources */,
 				B7D17F9721A34F3E004664CC /* WishListViewModel.swift in Sources */,
 				B789A6B721ADCF0F003727A4 /* ButtonExtension.swift in Sources */,
