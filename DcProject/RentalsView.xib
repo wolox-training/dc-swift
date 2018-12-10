@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RentalsView" customModule="DcProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="UgO-Gi-Omy">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="375" id="39o-O3-iSQ"/>
+                        <constraint firstAttribute="height" constant="102" id="rik-rV-YhD"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9ET-F1-Lq6">
+                    <rect key="frame" x="20" y="119" width="335" height="389"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.92549019610000005" green="0.96470588239999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="tintColor" red="0.92549019610000005" green="0.96470588239999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="UgO-Gi-Omy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3fI-gy-sdB"/>
+                <constraint firstItem="9ET-F1-Lq6" firstAttribute="top" secondItem="UgO-Gi-Omy" secondAttribute="bottom" constant="17" id="LTc-HK-CG3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="9ET-F1-Lq6" secondAttribute="bottom" constant="159" id="TmN-90-CD5"/>
+                <constraint firstItem="9ET-F1-Lq6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Yhy-1I-cfS"/>
+                <constraint firstItem="UgO-Gi-Omy" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="l2Y-ay-11M"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9ET-F1-Lq6" secondAttribute="trailing" constant="20" id="qj6-ap-TQm"/>
+                <constraint firstItem="UgO-Gi-Omy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="sWf-zA-VzA"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="tableRental" destination="9ET-F1-Lq6" id="vVj-Ql-GTv"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="Image" width="375" height="102"/>
+    </resources>
+</document>
