@@ -13,7 +13,7 @@ import Networking
 final class RentalsViewModel {
     
     private let _rentalRepository: RentalRepository
-    var rentals: [Rental]!
+    var rentals: [Rental] = []
     
     init(repository: RentalRepository) {
         
