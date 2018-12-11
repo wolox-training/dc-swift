@@ -39,42 +39,38 @@ final class RentalsController: UIViewController {
         super.viewDidLoad()
         requestRentals()
         configTable()
+        confingNavBar()
         load(childViewController: SuggestionController(viewModel: SuggestionViewModel(
             repository: SuggestionRepository())), into: _view.contentSuggestion)
     }
     
+    func confingNavBar() {
+        navigationItem.title = "NAVBAR-TITLE-RENTALS".localized()
+    }
+    
     func configTable() {
-        
         _view.tableRental.register(cell: LibraryCell.self)
         _view.tableRental.dataSource = self
         _view.tableRental.rowHeight = 90
-        
     }
     
     func requestRentals() {
         _viewModel.getRentals().responseJSON {[unowned self] response in
-            
             let resultResponse: Decoded<[Rental]> = decode(response.result.value!)
             self._viewModel.rentals = resultResponse.value!
             self._view.tableRental.reloadData()
-            
         }
     }
 }
 
 extension RentalsController: UITableViewDataSource {
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return _viewModel.rentals.count
-        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeue(cell: LibraryCell.self)
         cell?.confingCell(book: _viewModel.rentals[indexPath.row].book)
-        
         return cell!
     }
     
