@@ -11,20 +11,5 @@ import UIKit
 import WolmoCore
 
 final class SuggestionView: UIView, NibLoadable {
-    
     @IBOutlet weak var collectionSuggestion: UICollectionView!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        setUpViews()
-    }
-    
-}
-
-private extension SuggestionView {
-    
-    private func setUpViews() {
-        
-    }
-    
 }
