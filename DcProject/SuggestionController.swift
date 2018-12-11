@@ -44,28 +44,21 @@ final class SuggestionController: UIViewController {
     }
     
     func requestSuggestion() {
-        
-        _viewModel.getSuggestion().responseJSON {[unowned self] response in
-        
+        _viewModel.getSuggestion().responseJSON { [unowned self] response in
             let result: Decoded<[Suggestion]> = decode(response.result.value)
             self._viewModel.suggestions = result.value!
             self._view.collectionSuggestion.reloadData()
-            
         }
     }
     
 }
 
 extension SuggestionController: UICollectionViewDataSource {
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-
         return _viewModel.suggestions.count
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
         let cell = collectionView.dequeue(cell: SuggestionCell.self, for: indexPath as IndexPath)
         cell?.confingCell(suggestion: _viewModel.suggestions[indexPath.row])
         
