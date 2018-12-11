@@ -46,6 +46,14 @@ final class TabBarController: UITabBarController, UITabBarControllerDelegate, UI
             image: UIImage(named: "newBook"),
             selectedImage: UIImage(named: "newBook"))
         
-        viewControllers = [navLibraryController, navWishListController, navNewBook]
+        
+        let rentalsController = RentalsController(viewModel: RentalsViewModel(repository: RentalRepository()))
+        let navRentals = UINavigationController(rootViewController: rentalsController)
+        rentalsController.tabBarItem = UITabBarItem(
+            title: "TABBAR-RENTALS".localized(),
+            image: UIImage(named: "rentals"),
+            selectedImage: UIImage(named: "rentals"))
+        
+        viewControllers = [navLibraryController, navWishListController, navNewBook, navRentals]
     }
 }
