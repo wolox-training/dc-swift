@@ -68,6 +68,7 @@
 		B788B46D21BEEE30008E3E05 /* SuggestionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B788B46C21BEEE30008E3E05 /* SuggestionRepository.swift */; };
 		B788B46F21BEFCF3008E3E05 /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B788B46E21BEFCF3008E3E05 /* Suggestion.swift */; };
 		B789A6B721ADCF0F003727A4 /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B789A6B621ADCF0F003727A4 /* ButtonExtension.swift */; };
+		B7AF1FF221C04F2E009492CA /* Detailtype.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AF1FF121C04F2E009492CA /* Detailtype.swift */; };
 		B7B2F2C7219F076C00082CE3 /* LibraryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7B2F2C6219F076C00082CE3 /* LibraryCell.xib */; };
 		B7B2F2C9219F077800082CE3 /* LibraryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B2F2C8219F077800082CE3 /* LibraryCell.swift */; };
 		B7B2F2CC219F0C3100082CE3 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B2F2CB219F0C3100082CE3 /* Book.swift */; };
@@ -185,6 +186,7 @@
 		B788B46C21BEEE30008E3E05 /* SuggestionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionRepository.swift; sourceTree = "<group>"; };
 		B788B46E21BEFCF3008E3E05 /* Suggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
 		B789A6B621ADCF0F003727A4 /* ButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
+		B7AF1FF121C04F2E009492CA /* Detailtype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detailtype.swift; sourceTree = "<group>"; };
 		B7B2F2C6219F076C00082CE3 /* LibraryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryCell.xib; sourceTree = "<group>"; };
 		B7B2F2C8219F077800082CE3 /* LibraryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCell.swift; sourceTree = "<group>"; };
 		B7B2F2CB219F0C3100082CE3 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
@@ -455,6 +457,7 @@
 				B7149F2C21B56FF600B5BE39 /* WBooksUser.swift */,
 				B77A2E3021BAD15C00F440E4 /* Rental.swift */,
 				B788B46E21BEFCF3008E3E05 /* Suggestion.swift */,
+				B7AF1FF121C04F2E009492CA /* Detailtype.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -704,6 +707,7 @@
 				B75A2E2C21A745E200DC67DC /* BookDetailView.swift in Sources */,
 				B75A2E2B21A745E200DC67DC /* BookDetailController.swift in Sources */,
 				B720D53B21A5F9080078A50C /* User.swift in Sources */,
+				B7AF1FF221C04F2E009492CA /* Detailtype.swift in Sources */,
 				B723678B21B9D14E00242FE8 /* RentalsController.swift in Sources */,
 				B71F6E6E21AF0B73002E2F13 /* Comment.swift in Sources */,
 				B7149F2D21B56FF600B5BE39 /* WBooksUser.swift in Sources */,

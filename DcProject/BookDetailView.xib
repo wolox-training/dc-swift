@@ -116,27 +116,34 @@
                         <constraint firstItem="wSt-lC-VgX" firstAttribute="leading" secondItem="XEt-vI-vtd" secondAttribute="trailing" constant="20" id="zTc-dF-5rK"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YMh-Ax-N74">
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2oQ-Yh-dic">
                     <rect key="frame" x="20" y="403" width="335" height="264"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="335" id="Ojs-39-8N4"/>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="264" id="rae-q0-wfg"/>
-                        <constraint firstAttribute="height" constant="264" id="uwH-ed-HLJ"/>
-                    </constraints>
-                </view>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jsw-vt-rKl">
+                            <rect key="frame" x="0.0" y="0.0" width="335" height="110"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="110" id="FS1-oH-0WF"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YMh-Ax-N74">
+                            <rect key="frame" x="0.0" y="110" width="335" height="154"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                </stackView>
             </subviews>
             <color key="backgroundColor" red="0.92549019610000005" green="0.96470588239999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="kRb-rQ-ORO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="0vH-Jq-ASu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2oQ-Yh-dic" secondAttribute="trailing" constant="20" id="18i-Hm-ydL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="2oQ-Yh-dic" secondAttribute="bottom" id="8qx-mK-tc5"/>
                 <constraint firstItem="kRb-rQ-ORO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BEy-CQ-iTR"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="iDZ-LX-SJh" secondAttribute="trailing" constant="20" id="EaZ-8z-Mjn"/>
-                <constraint firstItem="YMh-Ax-N74" firstAttribute="top" secondItem="iDZ-LX-SJh" secondAttribute="bottom" constant="10" id="GSl-7K-bOM"/>
                 <constraint firstItem="iDZ-LX-SJh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="I4R-VW-kKF"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="YMh-Ax-N74" secondAttribute="bottom" id="L0g-xO-LDc"/>
-                <constraint firstItem="YMh-Ax-N74" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="fIX-Zh-bf9"/>
                 <constraint firstItem="iDZ-LX-SJh" firstAttribute="top" secondItem="kRb-rQ-ORO" secondAttribute="bottom" constant="21" id="gxo-cX-fKq"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="YMh-Ax-N74" secondAttribute="trailing" constant="20" id="mfq-xb-SIa"/>
+                <constraint firstItem="2oQ-Yh-dic" firstAttribute="top" secondItem="iDZ-LX-SJh" secondAttribute="bottom" constant="10" id="ptc-Ag-S9X"/>
+                <constraint firstItem="2oQ-Yh-dic" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="ucR-Wt-XM4"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
@@ -149,6 +156,7 @@
                 <outlet property="btnAddToWishlist" destination="IkV-7A-hOG" id="i4k-ph-1uu"/>
                 <outlet property="btnRent" destination="VS3-jg-qZT" id="NK4-9e-Q8c"/>
                 <outlet property="contentComment" destination="YMh-Ax-N74" id="Kqo-zM-DZa"/>
+                <outlet property="contentSuggestion" destination="jsw-vt-rKl" id="rqZ-yb-bzV"/>
             </connections>
             <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
         </view>
