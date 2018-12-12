@@ -81,7 +81,7 @@ extension LibraryController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let bookDetailView = BookDetailController(viewModel: BookDetailViewModel(
-            book: _viewModel.books.value[indexPath.row]))
+            book: _viewModel.books.value[indexPath.row], type: DetailType.library.text()))
         navigationController?.pushViewController(bookDetailView, animated: true)
     }
     

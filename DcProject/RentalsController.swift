@@ -51,6 +51,7 @@ final class RentalsController: UIViewController {
     func configTable() {
         _view.tableRental.register(cell: LibraryCell.self)
         _view.tableRental.dataSource = self
+        _view.tableRental.delegate = self
         _view.tableRental.rowHeight = 90
     }
     
@@ -63,7 +64,14 @@ final class RentalsController: UIViewController {
     }
 }
 
-extension RentalsController: UITableViewDataSource {
+extension RentalsController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let bookDetailView = BookDetailController(viewModel: BookDetailViewModel(
+            book: _viewModel.rentals[indexPath.row].book, type: DetailType.rental.text()))
+        navigationController?.pushViewController(bookDetailView, animated: true)
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return _viewModel.rentals.count
     }
