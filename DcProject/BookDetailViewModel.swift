@@ -11,9 +11,11 @@ import Foundation
 final class BookDetailViewModel {
     
     let detailBook: Book
+    var typeDetail: String
     
-    init(book: Book) {
+    init(book: Book, type: String) {
         detailBook = book
+        typeDetail = type
     }
     
 }
